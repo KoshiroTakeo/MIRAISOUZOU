@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{23EAEF40-C726-B6DE-5B4A-187ACDADEA86}</ProjectGuid>
+    <ProjectGuid>{2434B9C5-E7FF-1C55-305E-FC9ADD0A8CEC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -98,6 +98,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableToolsCreator.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\P2PManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\DebugUIBuilder.cs" />
+    <Compile Include="Assets\06_Scripts\065_System\IDamageble.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\SampleUI.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportSupport.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ButtonController.cs" />
@@ -154,6 +155,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\AnalyticsUI.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\BoneCapsuleTriggerLogic.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\ColorGrabbable.cs" />
+    <Compile Include="Assets\06_Scripts\066_Weapon\SwordWeapon.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MediaPlayerImage.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Scripts\DistanceGrabberSample.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\HandsManager.cs" />
@@ -211,8 +213,8 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
-    <Compile Include="Assets\06_Scripts\066_Weapon\SwordWeapon.cs" />
-    <Compile Include="Assets\06_Scripts\065_System\IDamageble.cs" />
+    <Compile Include="Assets\06_Scripts\067_Field\Field.cs" />
+    <Compile Include="Assets\06_Scripts\061_Player\KeyMoveTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
@@ -250,6 +252,7 @@
     <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered Opaque.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\NOTICE.txt" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
+    <None Include="Assets\99_AssetStore\SkySeries Freebie\Hdri setup.txt" />
     <None Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
     <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered.shader" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
@@ -485,12 +488,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -939,75 +936,75 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AssistantCoreSDKEditor.csproj">
-      <Project>{6DB2DC17-55E7-06B2-28C6-D3CF2A78FA3E}</Project>
+      <Project>{7068DDF3-79C9-9C23-C798-4BE0A5DF6B49}</Project>
       <Name>AssistantCoreSDKEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.csproj">
-      <Project>{7AA879A3-28FB-09D3-060C-987F1CCEA28B}</Project>
+      <Project>{28F2322C-9B78-D45B-47D0-ABFBDAC62104}</Project>
       <Name>Oculus.AudioManager</Name>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
-      <Project>{7AC7932C-D4D4-FF9B-6624-7B6FDB16363A}</Project>
+      <Project>{C1B78B5D-49A4-DD67-6829-544F6F9B9F45}</Project>
       <Name>AssistantCoreSDKRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Utils.Editor.csproj">
-      <Project>{F209237E-74A3-904B-77E4-265A70DFE6BB}</Project>
+      <Project>{5D33BBDC-5CFA-FF83-4E2F-F55512197E26}</Project>
       <Name>Oculus.AudioManager.Utils.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.WitAI.csproj">
-      <Project>{979E0ADB-D589-175D-E00F-505DC6FF85A1}</Project>
+      <Project>{6A29094F-3F57-1233-6CED-2602DF9A4FEF}</Project>
       <Name>Facebook.WitAI</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{43AEDBEC-A1D2-F927-4890-92F730EB1949}</Project>
+      <Project>{B8982287-DEAA-486B-D609-B23E46668385}</Project>
       <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{DDF8E6C5-D46D-A87E-101A-C8D87CA27D01}</Project>
+      <Project>{AC55BA0F-8831-9481-F294-E8BFABF7029B}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Audio.Editor.csproj">
-      <Project>{DA259CB4-82B3-E58C-3A96-5C432ACBF72F}</Project>
+      <Project>{77CAD57C-BE53-3A66-DA08-468977610FB6}</Project>
       <Name>Oculus.AudioManager.Audio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.Editor.csproj">
-      <Project>{30E702C2-9780-F091-C85C-36392F8EDF09}</Project>
+      <Project>{965E775B-B1BC-0E51-D597-0B78BB0AB499}</Project>
       <Name>Oculus.Spatializer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{271DDE29-A14F-DAD9-DFDF-ECEA3A4288D7}</Project>
+      <Project>{F496D695-38E4-EC57-88DC-5099C64247AE}</Project>
       <Name>Oculus.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{C230E161-64F2-F079-7AB3-CA8CC0FC5C34}</Project>
+      <Project>{D5D01DEA-4696-D977-B64E-C291BB827BFC}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{7DA3CD97-9A93-7A14-49B0-2B530D7E84BF}</Project>
+      <Project>{F47FFA62-A155-A84E-52B9-EEDF8D03D10A}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.csproj">
-      <Project>{9181B601-653C-029C-64DE-C021154C6E21}</Project>
+      <Project>{83F303B1-8913-199E-FD5D-8BFB3B0E233C}</Project>
       <Name>Oculus.Spatializer</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Editor.csproj">
-      <Project>{986B33AB-D880-392E-075F-7A5689EC73E7}</Project>
+      <Project>{26109F6D-16B3-2041-ECC0-EF3F1771033E}</Project>
       <Name>VoiceSDK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Editor.csproj">
-      <Project>{153BC3C9-D3BD-1367-7E4F-DD28A56A8F56}</Project>
+      <Project>{2C53AA0A-AC41-B62B-A2E4-929F0EEEFAB8}</Project>
       <Name>Facebook.Wit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.Editor.csproj">
-      <Project>{7E20351B-6B97-C29E-FF59-C48E381D3382}</Project>
+      <Project>{BA947C25-742B-4405-34C6-F7302E8DEA9C}</Project>
       <Name>Oculus.LipSync.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.csproj">
-      <Project>{04C6A896-EFEB-C57C-FDDB-EE0826D9CEBA}</Project>
+      <Project>{1093997E-98A4-59C6-2A15-0879E809503D}</Project>
       <Name>Oculus.LipSync</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
-      <Project>{9A3260DD-A341-2A46-DBFC-E4429BD28006}</Project>
+      <Project>{3D6AEA60-809F-6EF3-0689-594A941AF6AA}</Project>
       <Name>VoiceSDK.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
