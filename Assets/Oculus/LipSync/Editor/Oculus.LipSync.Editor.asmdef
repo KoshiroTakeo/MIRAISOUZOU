@@ -1,8 +1,7 @@
 {
     "name": "Oculus.LipSync.Editor",
-    "rootNamespace": "",
     "references": [
-        "Oculus.LipSync.Editor"
+        "Oculus.LipSync"
     ],
     "includePlatforms": [
         "Editor"

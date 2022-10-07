@@ -1,8 +1,8 @@
 {
     "name": "Oculus.VR.Editor",
-    "rootNamespace": "",
     "references": [
-        "GUID:d2761a0af0f567748a72629d4bb18a26"
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:4af21795022437d4bb139a86514b9ff9"
     ],
     "includePlatforms": [
         "Editor"

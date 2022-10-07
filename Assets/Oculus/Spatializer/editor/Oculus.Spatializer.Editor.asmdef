@@ -1,18 +1,14 @@
 {
     "name": "Oculus.Spatializer.Editor",
-    "rootNamespace": "",
     "references": [
-        "Oculus.Spatializer.Editor"
+        "Oculus.Spatializer"
     ],
+    "optionalUnityReferences": [],
     "includePlatforms": [
         "Editor"
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
     "versionDefines": [
         {
             "name": "com.unity.xr.management",
@@ -24,6 +20,5 @@
             "expression": "",
             "define": "USING_XR_SDK_OCULUS"
         }
-    ],
-    "noEngineReferences": false
+    ]
 }

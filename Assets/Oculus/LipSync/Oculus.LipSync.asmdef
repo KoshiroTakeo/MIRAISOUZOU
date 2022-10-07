@@ -1,9 +1,6 @@
 {
     "name": "Oculus.LipSync",
-    "rootNamespace": "",
-    "references": [
-        "GUID:bf7126905a54c9746b9c475d69312766"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

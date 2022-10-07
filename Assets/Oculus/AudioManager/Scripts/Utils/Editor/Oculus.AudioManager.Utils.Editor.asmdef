@@ -2,7 +2,7 @@
     "name": "Oculus.AudioManager.Utils.Editor",
     "rootNamespace": "",
     "references": [
-        "Oculus.AudioManager.Utils.Editor"
+        "Oculus.AudioManager"
     ],
     "includePlatforms": [
         "Editor"
