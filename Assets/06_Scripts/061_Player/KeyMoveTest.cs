@@ -16,7 +16,7 @@ public class KeyMoveTest : MonoBehaviour
     float speed = 16f;
 
     //ダッシュ速度の定義
-    float sprintspeed = 9f;
+    float sprintspeed = 39f;
 
     //方向転換速度の定義
     float angleSpeed = 200;
