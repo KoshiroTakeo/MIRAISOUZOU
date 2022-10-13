@@ -7,7 +7,8 @@ public partial class EnemyCommon : MonoBehaviour
     /// Instance
 
     /// Property
-    public int Life { get; set; }
+    public int Life { get; set; }   // Hit point
+    public bool HitWP { get; set; } // Žã“_‚É“–‚½‚Á‚½‚©‚Ç‚¤‚©
 
     /// Public Var
     public StateBase currentState;  // now
@@ -20,6 +21,7 @@ public partial class EnemyCommon : MonoBehaviour
     {
         Life -= damage;
 
+        Debug.Log("Now Hp" + Life );
         if (Life <= 0)
             OnDeath();
     }

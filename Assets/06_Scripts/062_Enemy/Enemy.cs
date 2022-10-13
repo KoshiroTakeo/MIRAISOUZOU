@@ -4,12 +4,18 @@ using UnityEngine;
 
 public partial class EnemyCommon
 {
+    [SerializeField] int life;
+    [SerializeField] GameObject weakpoint;
+
     /// <summary>
     /// èâä˙âªèàóù
     /// </summary>
     private void OnStart()
     {
-
+        Life = life;
+        HitWP = false;
+        weakpoint.SetActive(false);
+        Invoke(nameof(Fnc), 3.0f);
     }
 
     /// <summary>
@@ -17,7 +23,7 @@ public partial class EnemyCommon
     /// </summary>
     private void OnUpdate()
     {
-
+        
     }
 
     /// <summary>
@@ -33,6 +39,21 @@ public partial class EnemyCommon
     /// </summary>
     private void OnDeath()
     {
+        Debug.Log("DEAD");
         gameObject.SetActive(false);
+    }
+
+    private void Fnc()
+    {
+        weakpoint.SetActive(true);
+        Debug.Log("on");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (HitWP) { return; }
+
+        if (other.gameObject.tag == "Player")
+            AddDmg(1);
     }
 }

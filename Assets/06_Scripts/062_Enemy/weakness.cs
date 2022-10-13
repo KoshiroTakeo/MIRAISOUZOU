@@ -12,25 +12,36 @@ public class weakness : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (count <= 0)
+        {
+            enemy.HitWP = false;
             gameObject.SetActive(false);
+        }
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (count <= 0)
             return;
 
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             count--;
+            enemy.HitWP = true;
             enemy.AddDmg(damage);
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+            enemy.HitWP = false;
+    }
+
 }
