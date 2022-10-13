@@ -8,7 +8,7 @@ public class PlayerHP : MonoBehaviour
 
     GameObject player;
 
-    int nPlayerHP;
+    public int nPlayerHP;
 
 
     // Start is called before the first frame update
@@ -22,7 +22,27 @@ public class PlayerHP : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
-
+            nPlayerHP--;
+        }
+        if(nPlayerHP==4)
+        {
+            life5.SetActive(false);
+            life4.SetActive(true);
+        }
+        if (nPlayerHP == 3)
+        {
+            life4.SetActive(false);
+            life3.SetActive(true);
+        }
+        if (nPlayerHP == 2)
+        {
+            life3.SetActive(false);
+            life2.SetActive(true);
+        }
+        if (nPlayerHP == 1)
+        {
+            life2.SetActive(false);
+            life1.SetActive(true);
         }
     }
 }
