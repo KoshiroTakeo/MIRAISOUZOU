@@ -58,8 +58,9 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\StartCrashlytics.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\HandsActiveChecker.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderPBSV2Component.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateStay.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSettings.cs" />
-    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateBase.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\StateBase.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughProjectionSurface.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\GazeTarget.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringCollider.cs" />
@@ -230,7 +231,14 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
-    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateStay.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateRunway.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateChangemode.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateAttack.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateStan.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateLeave.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateRightPunch.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateLeftPunch.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateFistBump.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
