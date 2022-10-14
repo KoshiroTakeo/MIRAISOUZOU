@@ -225,6 +225,14 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
+    <Compile Include="Assets\GeurillaDroids\Scripts\FI_DroidStatistics.cs" />
+    <Compile Include="Assets\GeurillaDroids\Scripts\FI_LimbDependentDeath.cs" />
+    <Compile Include="Assets\GeurillaDroids\Scripts\FI_DestroyMe.cs" />
+    <Compile Include="Assets\GeurillaDroids\Scripts\FI_AnimatorDemo.cs" />
+    <Compile Include="Assets\GeurillaDroids\Scripts\FI_DestructibleLimb.cs" />
+    <Compile Include="Assets\GeurillaDroids\Scripts\FI_FrameRateManager.cs" />
+    <Compile Include="Assets\GeurillaDroids\Scripts\FI_LimbDependentObject.cs" />
+    <Compile Include="Assets\GeurillaDroids\Scripts\FI_ClipRandomizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UB\Simple2dWeatherEffects\Standard\D2Fogs.shader" />

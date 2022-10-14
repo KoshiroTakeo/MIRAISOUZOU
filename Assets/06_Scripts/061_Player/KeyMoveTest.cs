@@ -25,27 +25,39 @@ public class KeyMoveTest : MonoBehaviour
     float v;
     float h;
 
+    // プロト後消す
+    float time;
+
     void Update() //20220429 StartからUpdateへ訂正
     {
-        v = Time.deltaTime * sprintspeed;
+        time += Time.deltaTime;
 
-        //Shift+上下キーでダッシュ、上下キーで通常移動,それ以外は停止
-        //if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftShift))
-        //    v = Time.deltaTime * sprintspeed;
-        //else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftShift))
-        //    v = -Time.deltaTime * sprintspeed;
-        //else if (Input.GetKey(KeyCode.UpArrow))
-        //    v = Time.deltaTime * speed;
-        //else if (Input.GetKey(KeyCode.DownArrow))
-        //    v = -Time.deltaTime * speed;
-        //else
-        //    v = 0;
 
-        //移動の実行
-        if (!inJumping)//空中での移動を禁止
+
+        if(time > 10)
         {
-            transform.position += transform.forward * v;
+            v = Time.deltaTime * sprintspeed;
+
+            //Shift+上下キーでダッシュ、上下キーで通常移動,それ以外は停止
+            //if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftShift))
+            //    v = Time.deltaTime * sprintspeed;
+            //else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftShift))
+            //    v = -Time.deltaTime * sprintspeed;
+            //else if (Input.GetKey(KeyCode.UpArrow))
+            //    v = Time.deltaTime * speed;
+            //else if (Input.GetKey(KeyCode.DownArrow))
+            //    v = -Time.deltaTime * speed;
+            //else
+            //    v = 0;
+
+            //移動の実行
+            if (!inJumping)//空中での移動を禁止
+            {
+                transform.position += transform.forward * v;
+            }
         }
+
+        
 
         //スペースボタンでジャンプする
         if (onGround)
