@@ -14,7 +14,8 @@ public partial class EnemyCommon : MonoBehaviour
     public StateBase currentState;  // now
 
     /// Private Var
-    
+    private static readonly StateStay stateStay = new StateStay();
+
 
     /// Public Fnc
     public void AddDmg(int damage)

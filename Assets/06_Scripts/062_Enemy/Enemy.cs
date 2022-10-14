@@ -12,10 +12,14 @@ public partial class EnemyCommon
     /// </summary>
     private void OnStart()
     {
-        Life = life;
-        HitWP = false;
-        weakpoint.SetActive(false);
-        Invoke(nameof(Fnc), 3.0f);
+        Life = life;                    // HPの初期化
+        HitWP = false;                  // 弱点表示オフ
+        weakpoint.SetActive(false);     
+        Invoke(nameof(SetWP), 3.0f);    // Debug3秒後に弱点表示
+
+        // ボスのステート(初期化)
+        currentState = stateStay;       // 待機状態から
+        currentState.OnEnter(this, null);
     }
 
     /// <summary>
@@ -23,7 +27,7 @@ public partial class EnemyCommon
     /// </summary>
     private void OnUpdate()
     {
-        
+        currentState.OnUpdate(this);
     }
 
     /// <summary>
@@ -31,7 +35,7 @@ public partial class EnemyCommon
     /// </summary>
     private void OnFixedUpdate()
     {
-
+        currentState.OnFixedUpdate(this);
     }
 
     /// <summary>
@@ -43,9 +47,13 @@ public partial class EnemyCommon
         gameObject.SetActive(false);
     }
 
-    private void Fnc()
+    /// <summary>
+    /// 弱点を表示指せる処理
+    /// </summary>
+    private void SetWP()
     {
         weakpoint.SetActive(true);
+        
         Debug.Log("on");
     }
 

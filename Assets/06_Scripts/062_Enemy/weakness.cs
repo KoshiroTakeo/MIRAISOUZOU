@@ -7,16 +7,20 @@ public class weakness : MonoBehaviour
     [SerializeField] private EnemyCommon enemy;
     [SerializeField] private int count;
     [SerializeField] private int damage;
+    [SerializeField] private Transform[] point;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
-        //gameObject.SetActive(false);
+        SetPos();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
+    {
+        
+    }
+
+    
+    private void Update()
     {
         if (count <= 0)
         {
@@ -24,6 +28,17 @@ public class weakness : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    private void SetPos()
+    {
+        int num = Random.Range(0, point.Length);
+        Debug.Log("ƒ‰ƒ“ƒ_ƒ€‚Í"+num);
+        gameObject.transform.position = point[num].position;
+    }
+
+
+
+    // ---------------“–‚½‚è”»’è---------------------
 
     private void OnTriggerEnter(Collider other)
     {
