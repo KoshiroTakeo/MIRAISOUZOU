@@ -77,11 +77,7 @@ public class SwordWeapon : MonoBehaviour
 
 	}
 
-	void Damage(IDamageble<float> damageble)
-	{
-		Debug.Log("É_ÉÅÅ[ÉWî≠ê∂");
-		damageble.AddDamage(10);
-	}
+	
 
 	//-------------------------------------------------
 	public void BeginEstimatingVelocity()
