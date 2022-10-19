@@ -36,8 +36,8 @@ public class EnemyHPManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hpSlider = transform.Find("Canvas/HPSlider").GetComponent<Slider>();
-        bulkHPSlider = transform.Find("Canvas/BlukSlider").GetComponent<Slider>();
+        hpSlider = transform.Find("HUD/Canvas/HPSlider").GetComponent<Slider>();
+        bulkHPSlider = transform.Find("HUD/Canvas/BlukSlider").GetComponent<Slider>();
         hp = maxHP;
         finalHP = maxHP;
         hpSlider.value = 1;
@@ -52,6 +52,7 @@ public class EnemyHPManager : MonoBehaviour
         {
             return;
         }
+
         //　次に減らす時間がきたら
         if (countTime >= nextCountTime)
         {
@@ -92,14 +93,12 @@ public class EnemyHPManager : MonoBehaviour
         countTime = 0f;
         //　一定時間後にHPバーを減らすフラグを設定
         Invoke("StartReduceHP", delayTime);
-        Debug.Log("痛い");
     }
 
     //　徐々にHPバーを減らすのをスタート
     public void StartReduceHP()
     {
         isReducing = true;
-        Debug.Log("減らします");
     }
 }
 

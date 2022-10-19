@@ -16,10 +16,12 @@ namespace raspberly.ovr
         [SerializeField] private bool isLockZ;
         private Quaternion rot;
         private Quaternion rotDif;
+       private GameObject Boss;
 
         private void Start()
         {
             if (!target) target = Camera.main.transform;
+            Boss = GameObject.Find("HUD/BOSS");
         }
 
         private void LateUpdate()
