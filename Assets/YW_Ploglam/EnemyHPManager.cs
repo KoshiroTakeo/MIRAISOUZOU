@@ -92,12 +92,14 @@ public class EnemyHPManager : MonoBehaviour
         countTime = 0f;
         //　一定時間後にHPバーを減らすフラグを設定
         Invoke("StartReduceHP", delayTime);
+        Debug.Log("痛い");
     }
 
     //　徐々にHPバーを減らすのをスタート
     public void StartReduceHP()
     {
         isReducing = true;
+        Debug.Log("減らします");
     }
 }
 
