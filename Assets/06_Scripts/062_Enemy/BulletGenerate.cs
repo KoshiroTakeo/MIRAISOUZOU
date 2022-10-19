@@ -50,14 +50,7 @@ public class BulletGenerate : MonoBehaviour
             GameObject effect = Instantiate(BulletEffect) as GameObject;
             //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
             effect.transform.position = bullet.transform.position;
-/*
-            //発射ベクトル
-            Vector3 force;
-            //発射の向きと速度を決定
-            force = bullet.transform.forward * -BulletSpeed;
-            // Rigidbodyに力を加えて発射
-            bullet.GetComponent<Rigidbody>().AddForce(force);
-*/
+
             //経過時間を初期化して再度時間計測を始める
             time = 0.0f;
             //次に発生する時間間隔を決定する
@@ -82,14 +75,5 @@ public class BulletGenerate : MonoBehaviour
 
         //Vector3型のPositionを返す
         return new Vector3(x, y, z);
-    }
-
-    //エフェクトを生成する
-    void GenerateEffect()
-    {
-        //エフェクトを生成する
-        GameObject effect = Instantiate(BulletEffect) as GameObject;
-        //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
-        effect.transform.position = gameObject.transform.position;
     }
 }

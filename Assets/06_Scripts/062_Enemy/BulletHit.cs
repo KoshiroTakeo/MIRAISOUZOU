@@ -51,7 +51,7 @@ public class BulletHit : MonoBehaviour
             //エフェクトを発生させる
             //GenerateHitEffect();
         }
-/*
+
         //衝突したオブジェクトがPlayerだったとき
         if (collision.gameObject.CompareTag("Weapon"))
         {
@@ -61,7 +61,7 @@ public class BulletHit : MonoBehaviour
             //エフェクトを発生させる
             //GenerateHitEffect();
         }
-*/
+
     }
     void GenerateHitEffect()
     {
