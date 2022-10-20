@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onGround: 1
   inJumping: 0
-  Speed: -40
+  Speed: -50
   Damage_Speed: 0
 --- !u!1 &4677596087327302124
 GameObject:
