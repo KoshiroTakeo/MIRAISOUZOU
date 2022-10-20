@@ -661,9 +661,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d0c629bb2fc8e641b84bd5099044bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitbulletObject: {fileID: 5591457396619210052, guid: f79bc0d605d14e2429b7f5f1896efc67,
+  HbulletObject: {fileID: 5591457396619210052, guid: f79bc0d605d14e2429b7f5f1896efc67,
     type: 3}
-  HitbulletEffect: {fileID: 3461540734357188346, guid: 2f743028a3e97cd4c9512a6c811e1c08,
+  HbulletEffect: {fileID: 3461540734357188346, guid: 2f743028a3e97cd4c9512a6c811e1c08,
     type: 3}
   Player: {fileID: 53558478}
   Enemy: {fileID: 377602290087659823, guid: 0bd6b62e22a26794485fa90a14d554a5, type: 3}
