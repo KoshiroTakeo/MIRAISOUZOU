@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638012522348250402
+      ticks: 638016785372488208
     m_Hash: 1526658166
   m_LockFileStatus:
     m_FilePath: E:/Unity Projects/VIOLENCE SLASH/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638012522348260366
+      ticks: 638016785372488208
     m_Hash: 3485665245
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -675,6 +675,7 @@ m_PackageAssets:
         - 1.1.30
         - 1.1.31
         - 1.1.33
+        - 1.3.0
         - 2.0.1-exp.1
         - 2.0.1-pre.12
         - 2.0.1-pre.18
@@ -683,6 +684,7 @@ m_PackageAssets:
         - 1.1.30
         - 1.1.31
         - 1.1.33
+        - 1.3.0
         - 2.0.1-exp.1
         - 2.0.1-pre.12
         - 2.0.1-pre.18
