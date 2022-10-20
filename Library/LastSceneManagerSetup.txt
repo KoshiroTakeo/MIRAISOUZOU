@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/01_Scenes/TakeoScene.unity
+=======
+- path: Assets/01_Scenes/TargetBulletScene.unity
+>>>>>>> origin/yama
   isLoaded: 1
   isActive: 1
   isSubScene: 0
