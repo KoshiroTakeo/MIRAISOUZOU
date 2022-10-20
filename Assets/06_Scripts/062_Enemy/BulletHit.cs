@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletHit : MonoBehaviour
 {
     //弾のスピード
-    private float BulletSpeed = 0.01f;
+    private float BulletSpeed = 2.1f; // 10/20竹尾変更中（元：0.1f）
     //ゲームスピード
     public float GameSpeed = 1.0f;
     //プレイヤースピード
