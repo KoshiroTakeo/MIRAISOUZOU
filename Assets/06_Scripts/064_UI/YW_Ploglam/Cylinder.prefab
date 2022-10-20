@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5411415994785267714}
   - component: {fileID: 5411415994785267717}
   - component: {fileID: 5411415994785267716}
-  m_Layer: 3
-  m_Name: Cylinder
+  m_Layer: 6
+  m_Name: BOSS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

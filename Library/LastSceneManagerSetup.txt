@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/01_Scenes/HomingBulletScene.unity
+=======
+- path: Assets/01_Scenes/TesuScene2.unity
+>>>>>>> origin/Yoichi
   isLoaded: 1
   isActive: 1
   isSubScene: 0

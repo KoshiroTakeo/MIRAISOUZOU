@@ -21,7 +21,7 @@ public class Attack : MonoBehaviour
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out RaycastHit hit, 1000f, LayerMask.GetMask("Player")))
+            if (Physics.Raycast(ray, out RaycastHit hit, 1000f, LayerMask.GetMask("Boss")))
             {
                 hit.transform.GetComponent<EnemyHPManager>().TakeDamage(attackPower);
             }

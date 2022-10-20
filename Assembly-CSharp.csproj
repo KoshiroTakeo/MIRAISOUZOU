@@ -202,8 +202,13 @@
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarHand.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerTouch.cs" />
     <Compile Include="Assets\06_Scripts\061_Player\PlayerParameter.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\PlayerHP.cs" />
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\RotateDamageUI.cs" />
+=======
+    <Compile Include="Assets\YW_Ploglam\PlayerHP.cs" />
+    <Compile Include="Assets\YW_Ploglam\RotateDamageUI.cs" />
+>>>>>>> origin/Yoichi
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\VoipManager.cs" />
     <Compile Include="Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\Instructions.cs" />
     <Compile Include="Assets\06_Scripts\061_Player\StickMover.cs" />
@@ -240,6 +245,10 @@
     <Compile Include="Assets\06_Scripts\062_Enemy\TestEnemyMove.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\YW_Ploglam\HPberCameraUI\FollowHUD.cs" />
+>>>>>>> origin/Yoichi
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UB\Simple2dWeatherEffects\Standard\D2Fogs.shader" />
