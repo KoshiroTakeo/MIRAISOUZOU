@@ -247,6 +247,20 @@
     <Compile Include="Assets\06_Scripts\062_Enemy\TestEnemyMove.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateRunway.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateLeave.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\Debug\move.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\EnemyCommon.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateRightPunch.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\Enemy.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateLeftPunch.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateFistBump.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateAttack.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateStan.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\StateBase.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\weakness.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateStay.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\State\StateChangemode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UB\Simple2dWeatherEffects\Standard\D2Fogs.shader" />
