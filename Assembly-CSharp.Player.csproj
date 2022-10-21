@@ -76,6 +76,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\NativeVideoPlayer.cs" />
     <Compile Include="Assets\GeurillaDroids\Scripts\FI_DestructibleLimb.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimVisualLaser.cs" />
+    <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\MeshCut.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MoviePlayerSample.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportDestination.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainButtonVisualController.cs" />
@@ -207,6 +208,7 @@
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarHand.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerTouch.cs" />
     <Compile Include="Assets\06_Scripts\061_Player\PlayerParameter.cs" />
+    <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\Cutter.cs" />
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\PlayerHP.cs" />
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\RotateDamageUI.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\VoipManager.cs" />
