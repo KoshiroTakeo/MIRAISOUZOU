@@ -11,20 +11,27 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject PlayerObj;
 
     public float WorldTime = 1.0f; // ゲーム時間
-    public float AccelSpeed = 1.0f; // プレイヤーの加速
-    float fMaxSpeed = 5.0f;
+    public float AccelSpeed = 1.0f; // プレイヤーの加速度
+    float fMinSpeed = 0.5f; // 最低速度
+    float fMaxSpeed = 5.0f; // 最大速度
 
-    public bool GameOver = false;
+    public bool GameOver = false; // ゲームオーバーの判定
+
+
 
     private void Awake()
     {
         GameOver = false;
     }
 
+
+
     private void Start()
     {
         
     }
+
+
 
     private void Update()
     {
@@ -32,10 +39,11 @@ public class GameManager : MonoBehaviour
     }
 
     
+
     public void CheckDamage()
     {
         Debug.Log("速度低下");
-        AccelSpeed *= 0.9f;
+        if(fMinSpeed < AccelSpeed) AccelSpeed *= 0.9f;
     }
 
     public void OnSkill()
@@ -47,7 +55,7 @@ public class GameManager : MonoBehaviour
     // ステージ開始処理
     void OnGameStart()
     {
-
+        
     }
 
     // ゲームオーバー処理
