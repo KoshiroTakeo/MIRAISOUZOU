@@ -22,6 +22,7 @@ public class HomingBulletHit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //オブジェクトを見つける
         Player = GameObject.Find("Player");
         Enemy = GameObject.Find("HomingEnemy");
     }

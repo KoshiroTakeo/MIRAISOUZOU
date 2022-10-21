@@ -11,7 +11,7 @@ public class HomingBulletGenerate : MonoBehaviour
     //プレイヤーのプレハブ
     public GameObject Player;
     //敵のプレハブ
-    public GameObject Enemy;
+    public GameObject HEnemy;
     //時間間隔の最小値
     public float minTime = 3.0f;
     //時間間隔の最大値
@@ -28,8 +28,9 @@ public class HomingBulletGenerate : MonoBehaviour
         //時間間隔を決定する
         Hitinterval = GetRandomTime();
 
+        //オブジェクトを見つける
         Player = GameObject.Find("Player");
-        Enemy = GameObject.Find("HomingEnemy");
+        HEnemy = GameObject.Find("HomingEnemy");
     }
 
     // Update is called once per frame
@@ -39,15 +40,16 @@ public class HomingBulletGenerate : MonoBehaviour
         //時間計測
         Hittime += Time.deltaTime;
 
+        //プレイヤーの方向を向く
+        transform.LookAt(Player.transform);
+
         //経過時間が生成時間になったとき(生成時間より大きくなったとき)
         if (Hittime > Hitinterval)
         {
             //弾をインスタンス化する(生成する)
             GameObject Hitbullet = Instantiate(HbulletObject);
             //生成した弾の位置をランダム(X=-20～20,Y=0,Z=50)に設定する
-            Hitbullet.transform.position = Enemy.transform.position;
-            //プレイヤーの方向を向く
-            transform.LookAt(Player.transform);
+            Hitbullet.transform.position = HEnemy.transform.position;
 
             //エフェクトを生成する
             GameObject effect = Instantiate(HbulletEffect) as GameObject;

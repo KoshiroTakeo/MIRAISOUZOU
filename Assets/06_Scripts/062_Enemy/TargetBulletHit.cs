@@ -15,38 +15,38 @@ public class TargetBulletHit : MonoBehaviour
     public GameObject HitEffect;
     //プレイヤープレハブ
     public GameObject Player;
+    //プレイヤープレハブ
+    public GameObject TEnemy;
     //弾プレハブ
     public GameObject Bullet;
     //弾を消す座標
     public float BulletDeletePos = -50.0f;
     //プレイヤー座標を一時的に格納
     Vector3 Player_pos;
-
+    //エネミーー座標を一時的に格納
+    Vector3 TEnemy_pos;
     //private Rigidbody rb;
     
     // Start is called before the first frame update
     void Start()
     {
+        //オブジェクトを見つける
         Player = GameObject.Find("Player");
+        TEnemy = GameObject.Find("TargetEnemy");
 
         Player_pos = Player.transform.position;
-
+        TEnemy_pos = TEnemy.transform.position;
         //rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //(A,B,速度)AからBまで移動
         transform.position = Vector3.MoveTowards(transform.position, 
-            (Player_pos - transform.position), 
-            BulletSpeed * GameSpeed * PlayerSpeed);
+            (Player_pos- TEnemy_pos) * 10.0f,           //弾を撃った時の(プレイヤーの位置-敵の位置)ベクトルを計算
+            BulletSpeed * GameSpeed * PlayerSpeed);     // 速度
         
-        if(Player_pos == transform.position)
-        {
-            //Vector3.MoveTowards(-(Player_pos - transform.position), transform.position, BulletSpeed * GameSpeed * PlayerSpeed);
-            Destroy(gameObject);
-        }
         //弾のZ軸の位置がBulletDeletePos以下の時
         if (gameObject.transform.position.z < BulletDeletePos)
         {
@@ -67,17 +67,17 @@ public class TargetBulletHit : MonoBehaviour
             //エフェクトを発生させる
             //GenerateHitEffect();
         }
-        /*
-                //衝突したオブジェクトがPlayerだったとき
-                if (collision.gameObject.CompareTag("Weapon"))
-                {
-                    //弾を削除
-                    Destroy(gameObject);
+        
+        //衝突したオブジェクトがPlayerだったとき
+        if (collision.gameObject.CompareTag("Weapon"))
+        {
+            //弾を削除
+            Destroy(gameObject);
 
-                    //エフェクトを発生させる
-                    //GenerateHitEffect();
-                }
-        */
+            //エフェクトを発生させる
+            //GenerateHitEffect();
+        }
+        
     }
     void GenerateHitEffect()
     {
