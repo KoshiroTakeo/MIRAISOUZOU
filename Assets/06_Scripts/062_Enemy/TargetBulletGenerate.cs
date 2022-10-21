@@ -27,6 +27,7 @@ public class TargetBulletGenerate : MonoBehaviour
         //時間間隔を決定する
         Hinterval = GetRandomTime();
 
+        //オブジェクトを見つける
         Player = GameObject.Find("Player");
         TEnemy = GameObject.Find("TargetEnemy");
     }
@@ -34,9 +35,11 @@ public class TargetBulletGenerate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //時間計測
         Htime += Time.deltaTime;
+
+        //プレイヤーの方向を向く
+        transform.LookAt(Player.transform);
 
         //経過時間が生成時間になったとき(生成時間より大きくなったとき)
         if (Htime > Hinterval)
@@ -45,8 +48,6 @@ public class TargetBulletGenerate : MonoBehaviour
             GameObject Hbullet = Instantiate(TbulletObject);
             //生成した弾の位置をランダム(X=-20～20,Y=0,Z=50)に設定する
             Hbullet.transform.position = TEnemy.transform.position;
-
-            transform.LookAt(Player.transform);
 
             //エフェクトを生成する
             GameObject effect = Instantiate(TbulletEffect) as GameObject;
@@ -60,7 +61,6 @@ public class TargetBulletGenerate : MonoBehaviour
 
         }
     }
-
     // 指定した範囲でランダムな時間を生成する関数
     private float GetRandomTime()
     {
