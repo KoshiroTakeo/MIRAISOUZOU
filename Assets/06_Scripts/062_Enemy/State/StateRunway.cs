@@ -2,25 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateRunway : StateBase
+public partial class EnemyCommon
 {
-    public override void OnEnter(EnemyCommon owner, StateBase prev)
+    public class StateRunway : StateBase
     {
-        //base.OnEnter(owner, prev);
+        private float move;
+
+        public override void OnEnter(EnemyCommon owner, StateBase prev)
+        {
+            Debug.Log("‚ç‚ñ‚¤‚¥ó‘Ô");
+        }
+
+        public override void OnUpdate(EnemyCommon owner)
+        {
+            if (owner.transform.position.x >= 10)
+                owner.ChangeState(s_leave);
+
+            move = Mathf.Pow(owner.idx, owner.mult) * 0.001f;
+            owner.rig.velocity += new Vector3(move, 0, 0);
+        }
+
+        public override void OnFixedUpdate(EnemyCommon owner)
+        {
+            
+        }
+
+        public override void OnExit(EnemyCommon owner, StateBase next)
+        {
+            
+        }
     }
 
-    public override void OnUpdate(EnemyCommon owner)
-    {
-        //base.OnUpdate(owner);
-    }
-
-    public override void OnFixedUpdate(EnemyCommon owner)
-    {
-        //base.OnFixedUpdate(owner);
-    }
-
-    public override void OnExit(EnemyCommon owner, StateBase next)
-    {
-        //base.OnExit(owner, next);
-    }
 }
+

@@ -2,25 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateStay : StateBase
+public partial class EnemyCommon
 {
-    public override void OnEnter(EnemyCommon owner, StateBase prev)
+    public class StateStay : StateBase
     {
-        //base.OnEnter(owner, prev);
+        public override void OnEnter(EnemyCommon owner, StateBase prev)
+        {
+            Debug.Log("ÉXÉeÉCèÛë‘");
+            owner.ChangeState(s_runway);
+        }
+
+        public override void OnUpdate(EnemyCommon owner)
+        {
+
+        }
+
+        public override void OnFixedUpdate(EnemyCommon owner)
+        {
+
+        }
+
+        public override void OnExit(EnemyCommon owner, StateBase next)
+        {
+
+        }
     }
 
-    public override void OnUpdate(EnemyCommon owner)
-    {
-        //base.OnUpdate(owner);
-    }
-
-    public override void OnFixedUpdate(EnemyCommon owner)
-    {
-        //base.OnFixedUpdate(owner);
-    }
-
-    public override void OnExit(EnemyCommon owner, StateBase next)
-    {
-        //base.OnExit(owner, next);
-    }
 }

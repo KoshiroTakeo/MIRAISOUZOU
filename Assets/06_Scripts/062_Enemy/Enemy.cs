@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public partial class EnemyCommon
 {
+    [SerializeField] Rigidbody rig;
     [SerializeField] int life;
     [SerializeField] GameObject weakpoint;
+    //[SerializeField] GameObject player;
+    [SerializeField] private float leave;   // 離れる距離
+    [SerializeField] private float idx;     // 指数
+    [SerializeField] private float mult;    // 乗数
 
     /// <summary>
     /// 初期化処理
@@ -18,7 +24,7 @@ public partial class EnemyCommon
         Invoke(nameof(SetWP), 3.0f);    // Debug3秒後に弱点表示
 
         // ボスのステート(初期化)
-        currentState = stateStay;       // 待機状態から
+        currentState = s_stay;       // 待機状態から
         currentState.OnEnter(this, null);
     }
 

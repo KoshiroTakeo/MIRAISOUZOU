@@ -14,8 +14,10 @@ public partial class EnemyCommon : MonoBehaviour
     public StateBase currentState;  // now
 
     /// Private Var
-    private static readonly StateStay stateStay = new StateStay();
-
+    private static readonly StateStay s_stay = new StateStay();
+    private static readonly StateRunway s_runway = new StateRunway();
+    private static readonly StateChangemode s_changemode = new StateChangemode();
+    private static readonly StateLeave s_leave = new StateLeave();
 
     /// Public Fnc
     public void AddDmg(int damage)
@@ -25,6 +27,17 @@ public partial class EnemyCommon : MonoBehaviour
         Debug.Log("Now Hp" + Life );
         if (Life <= 0)
             OnDeath();
+    }
+
+    public void PlayerDamage()
+    {
+        // 10‰“‚´‚©‚é
+        ChangeState(s_leave);
+    }
+
+    public void OnLeave()
+    {
+        ChangeState(s_leave);
     }
 
     /// Private Fnc
