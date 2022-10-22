@@ -36,8 +36,8 @@ public class EnemyHPManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hpSlider = transform.Find("Canvas/HPSlider").GetComponent<Slider>();
-        bulkHPSlider = transform.Find("Canvas/BlukSlider").GetComponent<Slider>();
+        hpSlider = transform.Find("HUD/Canvas/HPSlider").GetComponent<Slider>();
+        bulkHPSlider = transform.Find("HUD/Canvas/BlukSlider").GetComponent<Slider>();
         hp = maxHP;
         finalHP = maxHP;
         hpSlider.value = 1;
@@ -52,6 +52,7 @@ public class EnemyHPManager : MonoBehaviour
         {
             return;
         }
+
         //@ŽŸ‚ÉŒ¸‚ç‚·ŽžŠÔ‚ª‚«‚½‚ç
         if (countTime >= nextCountTime)
         {

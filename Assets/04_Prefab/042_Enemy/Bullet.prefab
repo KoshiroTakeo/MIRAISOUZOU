@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2595699450464435232}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335328262590012319}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4115287da1b51a241894c925772e4530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameSpeed: 1
+  PlayerSpeed: 1
   HitEffect: {fileID: 3461540734357188346, guid: 2f743028a3e97cd4c9512a6c811e1c08,
     type: 3}
   BulletDeletePos: -50

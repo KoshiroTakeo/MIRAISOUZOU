@@ -24,7 +24,17 @@ public class PlayerHP : MonoBehaviour
         {
             nPlayerHP--;
         }
-        if(nPlayerHP==4)
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            nPlayerHP++;
+        }
+
+        if (nPlayerHP >= 5)
+        {
+            life5.SetActive(true);
+            nPlayerHP = 5;
+        }
+        if (nPlayerHP==4)
         {
             life5.SetActive(false);
             life4.SetActive(true);
@@ -43,6 +53,11 @@ public class PlayerHP : MonoBehaviour
         {
             life2.SetActive(false);
             life1.SetActive(true);
+        }
+        if (nPlayerHP <= 0)
+        {
+            life1.SetActive(false);
+            nPlayerHP = 0;
         }
     }
 }
