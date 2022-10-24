@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
     }
 
     
-
     public void CheckDamage()
     {
         Debug.Log("‘¬“x’á‰º");

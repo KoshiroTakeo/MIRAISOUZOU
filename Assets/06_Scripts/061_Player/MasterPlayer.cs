@@ -5,6 +5,7 @@
 // 20220728:可用性向上のため再構築
 //======================================================================
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace VR.Players
 {
@@ -64,9 +65,15 @@ namespace VR.Players
         }
 
         // 各ボタン押したら起こる事たち
-        public void SkillAction()
+        public void SkillAction(InputAction.CallbackContext context)
         {
-            Manager.OnSkill();
+            Debug.Log(context);
+            if (context.performed)
+            {
+                Debug.Log("長押しされたよ！");
+                Manager.OnSkill();
+            }
+            
         }
 
         public void MenuAction()

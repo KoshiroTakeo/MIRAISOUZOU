@@ -11,7 +11,8 @@
                     "id": "e30d828e-8f8c-4723-9590-38513f7d42cd",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Right_Trigger",
@@ -19,7 +20,8 @@
                     "id": "23dbb624-cbfe-4399-a035-c0126de38d1d",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press"
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Trigger_Touch",
@@ -27,7 +29,8 @@
                     "id": "905c441a-75ff-4d89-898e-cd3675a877cc",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Grip",
@@ -35,7 +38,8 @@
                     "id": "95abe729-b75c-4de8-911a-9f0d0551ee79",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Touch",
@@ -43,7 +47,8 @@
                     "id": "182fd818-f798-411d-a319-53c475ab7bce",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Button_A",
@@ -51,7 +56,8 @@
                     "id": "0fe99985-4aad-416f-90a5-61e272a2d455",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Button_A_Touch",
@@ -59,7 +65,8 @@
                     "id": "41e345a9-b7bc-4565-b668-aa7d0037bb23",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Button_B",
@@ -67,7 +74,8 @@
                     "id": "648c3759-cb55-4e44-bd24-0d46e0caa33c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Button_B_Touch",
@@ -75,7 +83,8 @@
                     "id": "ed80a671-e097-49e0-a083-0f24c69f983d",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Stick_Clicked",
@@ -83,7 +92,8 @@
                     "id": "71530461-ce5f-4341-93c3-1f02649ea5f2",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Stick_Touch",
@@ -91,7 +101,8 @@
                     "id": "ef202e43-300e-4cad-b9e1-cfcff01d39cb",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right_Stick",
@@ -99,7 +110,8 @@
                     "id": "4fa0c570-fbf3-4347-8c71-9389b4bd0336",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Left_Trigger",
@@ -107,7 +119,8 @@
                     "id": "f40620ba-3ea5-4ef1-934f-a9e74d2a257c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press"
+                    "interactions": "Press",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Trigger_Touch",
@@ -115,7 +128,8 @@
                     "id": "2501266b-b5ea-4bcd-a141-83289417670f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Grip",
@@ -123,7 +137,8 @@
                     "id": "c43cbf39-be61-473a-b9a1-88472d18212f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Touch",
@@ -131,7 +146,8 @@
                     "id": "babf9e93-e326-47e4-9736-809a680f89c4",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Button_X",
@@ -139,7 +155,8 @@
                     "id": "76886138-1974-43e2-aa38-c9caf2b4fb4f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Button_X_Touch",
@@ -147,7 +164,8 @@
                     "id": "4ae2c9f2-e64e-4647-8c92-3dedce216139",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Button_Y",
@@ -155,7 +173,8 @@
                     "id": "6ba213ef-6373-43f7-8a85-829c1665fbcc",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Button_Y_Touch",
@@ -163,7 +182,8 @@
                     "id": "62fd0ec2-99ca-46a4-b6d8-0c6b24c02bda",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Button_Menu",
@@ -171,7 +191,8 @@
                     "id": "905c0e0f-a354-4b90-bec1-3522defa3517",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Stick",
@@ -179,7 +200,8 @@
                     "id": "9f02c257-f132-437f-ba88-16f612ac2b77",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Left_Stick_Clicked",
@@ -187,7 +209,8 @@
                     "id": "f56f08b4-81b7-45e6-a0f0-0a3593764412",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left_Stick_Touch",
@@ -195,7 +218,8 @@
                     "id": "e15678e2-5e5d-470b-8097-5ae4cc4bd726",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -422,7 +446,7 @@
                 {
                     "name": "",
                     "id": "abd868bd-e5ab-4acd-933c-5ba744a7a6d5",
-                    "path": "<OculusTouchController>{LeftHand}/triggerPressed",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerLeft>{LeftHand}/triggerpressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -596,7 +620,8 @@
                     "id": "fb7524cf-93ad-46c6-a908-0eeeddb1a000",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Submit",
@@ -604,7 +629,8 @@
                     "id": "e0291b00-c6fd-45e6-8b20-b5e938ceeccc",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Cancel",
@@ -612,7 +638,8 @@
                     "id": "050f95d9-c4e6-481e-bb12-49212d96ef1c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Point",
@@ -620,7 +647,8 @@
                     "id": "a4dd9dd8-e632-40ba-a812-507d15bc5a9d",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Click",
@@ -628,7 +656,8 @@
                     "id": "ab1f90f1-29bf-4c87-a139-7a9862d1052e",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "ScrollWheel",
@@ -636,7 +665,8 @@
                     "id": "412ce45d-eac0-442e-b579-ee847289453f",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MiddleClick",
@@ -644,7 +674,8 @@
                     "id": "860d6d19-20b8-4f5b-9885-3cfff9fddda4",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RightClick",
@@ -652,7 +683,8 @@
                     "id": "6b600d51-f1fa-4b2e-a735-7c84dd30e1b0",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "TrackedDevicePosition",
@@ -660,7 +692,8 @@
                     "id": "87fc3678-b47c-44a6-8bc7-8f541a315c75",
                     "expectedControlType": "Vector3",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "TrackedDeviceOrientation",
@@ -668,7 +701,8 @@
                     "id": "6cd6ae52-c2c6-48d7-8e42-19a666010ffd",
                     "expectedControlType": "Quaternion",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
