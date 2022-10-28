@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/01_Scenes/TakeoScene.unity
-=======
 - path: Assets/01_Scenes/OnGame/Stage1_proto.unity
->>>>>>> takeo
   isLoaded: 1
   isActive: 1
   isSubScene: 0
