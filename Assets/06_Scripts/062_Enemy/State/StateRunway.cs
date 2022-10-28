@@ -15,11 +15,11 @@ public partial class EnemyCommon
 
         public override void OnUpdate(EnemyCommon owner)
         {
-            if (owner.transform.position.x >= 10)
-                owner.ChangeState(s_leave);
-
-            move = Mathf.Pow(owner.idx, owner.mult) * 0.001f;
-            owner.rig.velocity += new Vector3(move, 0, 0);
+            //if (owner.transform.position.x >= 10)
+            //    owner.ChangeState(s_leave);
+            
+            move = Mathf.Pow(owner.idx, owner.mult) * 0.01f;
+            owner.rig.velocity += new Vector3(0, 0, -move);
         }
 
         public override void OnFixedUpdate(EnemyCommon owner)
