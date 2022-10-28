@@ -13,15 +13,10 @@ namespace VR.Players
     public class PlayerData : ScriptableObject
     {
         // 各パラメータ
-        public float fHP = 1000;
-        public float fAttack = 100;
+        public int nHP = 5;
         public float fSpeed = 1;
-        
+        public float fArmorTime = 0.8f;
+        public float fSkillTime = 3.0f;
 
-        // 装備
-        public GameObject Left_PrimaryWeapon;
-        //public GameObject Left_SecondaryWeapon;
-        public GameObject Right_PrimaryWeapon;
-        //public GameObject Right_SecondaryWeapon;
     }
 }

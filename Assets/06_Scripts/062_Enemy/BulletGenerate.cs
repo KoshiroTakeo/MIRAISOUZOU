@@ -70,8 +70,8 @@ public class BulletGenerate : MonoBehaviour
     {
         //X座標をランダムに生成する
         float x = Random.Range(MinBulletPositionX, MaxBulletPositionX);
-        float y = 0.0f;
-        float z = 50.0f;
+        float y = 1.0f; // 10/20竹尾変更中（元：0.0f）
+        float z = 400.0f; // 10/20竹尾変更中（元：50.0f）
 
         //Vector3型のPositionを返す
         return new Vector3(x, y, z);

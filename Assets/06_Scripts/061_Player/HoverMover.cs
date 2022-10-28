@@ -12,7 +12,7 @@ namespace VR.Players
     public class HoverMover 
     {
         // 必要なもの
-        public float fRadius = 0.2f; // 加速開始距離
+        public float fRadius = 0.1f; // 加速開始距離
         public float fbrakepower = 2f;  // ブレーキ強度
         public float fstopmagnitude = 1f;
 
@@ -24,7 +24,7 @@ namespace VR.Players
         public void HeadInclinationMove(GameObject _parent, CharacterController _character ,Vector3 _anchor, Vector3 _initirizepos, float _speed)
         {
             // 初期位置と移動位置の差をとる（インスタンス処理を毎回かけているので重くなっているかも）
-            Vector3 setDirection = new Vector3(_anchor.x - _initirizepos.x, 0, _anchor.z - _initirizepos.z); 
+            Vector3 setDirection = new Vector3(_anchor.x - _initirizepos.x, 0, 0); 
             float fsetSpeed = _speed - fRadius;
 
             // 停止範囲外に出たとき走り出す

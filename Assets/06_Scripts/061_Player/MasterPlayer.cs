@@ -5,6 +5,7 @@
 // 20220728:可用性向上のため再構築
 //======================================================================
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace VR.Players
 {
@@ -19,16 +20,16 @@ namespace VR.Players
 
         // Playerのパラメータデータ
         [SerializeField] PlayerData Data; // スクリプタブル
-        PlayerParameter Parameter;
+        [SerializeField] PlayerParameter Parameter;
 
         // 移動クラス
-        StickMover NormalMove; // アナログスティックによる移動
         HoverMover HoverMove;  // 浮遊移動
 
-        // 攻撃クラス
+        // ゲームマネージャー
+        GameManager Manager;
 
-        // エフェクトクラス
 
+       
 
         private void Start()
         {
@@ -45,28 +46,57 @@ namespace VR.Players
 
 
             Parameter = new PlayerParameter(Data);
-            NormalMove = new StickMover();
             HoverMove = new HoverMover();
 
-            
+            Manager = GameObject.FindWithTag("Manager").GetComponent<GameManager>();
         }
 
         private void Update()
         {
-            if (OVRInput.GetDown(OVRInput.RawButton.B))
+            // 死亡したらこれより先実行しない
+            if (Parameter.bDeath)
             {
-                // 現在位置を原点とし、移動開始の地点とする
-                InitirizeAnchorPos = AnchorObject.transform.position;
+                Manager.OnGameOver();
+                return;
             }
 
             // 浮遊移動
             HoverMove.HeadInclinationMove(this.gameObject ,PlayerCharacter, AnchorObject.transform.position, InitirizeAnchorPos,Parameter.fSpeed);
         }
 
-        private void LateUpdate()
+        // 各ボタン押したら起こる事たち
+        public void SkillAction(InputAction.CallbackContext context)
         {
+            Debug.Log(context);
+            if (context.performed)
+            {
+                Debug.Log("長押しされたよ！");
+                Manager.OnSkill();
+            }
             
         }
+
+        public void MenuAction()
+        {
+
+        }
+
+
+
+        // 接触判定
+        private void OnTriggerEnter(Collider collider)
+        {
+            if (collider.gameObject.tag == "EnemyAttack")
+            {
+                StartCoroutine(Parameter.OnArmorTime());
+                Manager.CheckDamage();
+                Parameter.CheckHP();
+            }
+
+        }
+
+        
+        
     }
 }
 
