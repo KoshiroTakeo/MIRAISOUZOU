@@ -14,10 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
+    x: 7.2000003
+    y: 50.4
+    width: 1345.6
+    height: 766.4
+=======
     x: 0
+<<<<<<< HEAD
     y: 43.2
     width: 1536
     height: 780.8
+=======
+    y: 43
+    width: 1920
+    height: 997
+>>>>>>> origin/master
+>>>>>>> origin/yama
   m_ShowMode: 4
 <<<<<<< HEAD
   m_Title: "\u30A4\u30F3\u30B9\u30DA\u30AF\u30BF\u30FC"
@@ -167,7 +180,149 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 >>>>>>> origin/kama
+=======
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 14}
+  - {fileID: 8}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1920
+    height: 947
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
+  vertical: 0
+<<<<<<< HEAD
+  controlID: 66
+--- !u!114 &4
+=======
+<<<<<<< HEAD
+  controlID: 37
+--- !u!114 &7
+>>>>>>> origin/master
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1337
+    y: 0
+    width: 279
+    height: 947
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 0
+=======
+  controlID: 111
+>>>>>>> takeo
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1466
+    y: 0
+    width: 454
+    height: 947
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 363
+    height: 561
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 21}
+  m_Panes:
+  - {fileID: 21}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 720
+    height: 386
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 24}
+  m_Panes:
+  - {fileID: 19}
+  - {fileID: 24}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> origin/yama
   m_EditorHideFlags: 1
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -258,14 +413,58 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+=======
+    y: 0
+    width: 1337
+    height: 947
+  m_MinSize: {x: 433, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
+  vertical: 1
+<<<<<<< HEAD
+  controlID: 67
+--- !u!114 &11
+=======
+  controlID: 38
+=======
+>>>>>>> takeo
+--- !u!114 &14
+>>>>>>> origin/master
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 15}
+  - {fileID: 4}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+>>>>>>> origin/yama
+<<<<<<< HEAD
     y: 30
     width: 1536
     height: 730.8
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 427
 --- !u!114 &6
+=======
+<<<<<<< HEAD
+  controlID: 68
+--- !u!114 &12
+=======
+  controlID: 39
+>>>>>>> origin/yama
 =======
     y: 0
     width: 1067
@@ -325,8 +524,14 @@ MonoBehaviour:
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 429
 --- !u!114 &8
+=======
+  controlID: 113
+--- !u!114 &16
+>>>>>>> origin/master
+>>>>>>> origin/yama
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -609,10 +814,23 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
+    x: 7.2000003
+    y: 524.8
+    width: 1018
+    height: 251
+=======
     x: 0
+<<<<<<< HEAD
     y: 437
     width: 1066
     height: 250
+=======
+    y: 634
+    width: 719
+    height: 365
+>>>>>>> origin/master
+>>>>>>> origin/yama
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -627,22 +845,67 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/04_Prefab/046_Field
+=======
+<<<<<<< HEAD
+    - Assets/06_Scripts/062_Enemy
+=======
+<<<<<<< HEAD
+    - Assets/06_Scripts/061_Player
+=======
+    - Assets/06_Scripts/067_Field
+>>>>>>> takeo
+>>>>>>> origin/master
+>>>>>>> origin/yama
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/04_Prefab/046_Field
+=======
+<<<<<<< HEAD
+  - Assets/06_Scripts/062_Enemy
+=======
+<<<<<<< HEAD
+  - Assets/06_Scripts/061_Player
+=======
+  - Assets/06_Scripts/067_Field
+>>>>>>> takeo
+>>>>>>> origin/master
+>>>>>>> origin/yama
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\nhs90548\Desktop\Mirai
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 31}
     m_SelectedIDs: 4a520000
     m_LastClickedID: 21066
     m_ExpandedIDs: 000000009e510000a0510000a2510000a4510000a6510000a8510000aa510000ac510000ae510000b0510000b2510000b4510000b6510000b8510000ba510000bc510000be510000c0510000c2510000c4510000c6510000c8510000ca510000cc510000ce510000d051000048520000
+=======
+<<<<<<< HEAD
+    scrollPos: {x: 0, y: 77}
+    m_SelectedIDs: 5c4f0000
+    m_LastClickedID: 20316
+    m_ExpandedIDs: 00000000e64e00004e4f000000ca9a3b
+=======
+<<<<<<< HEAD
+    scrollPos: {x: 0, y: 41}
+    m_SelectedIDs: ca5c0000
+    m_LastClickedID: 23754
+    m_ExpandedIDs: 000000007c5b00007e5b0000805b0000825b0000845b0000a85b0000b05b000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 151}
+    m_SelectedIDs: a8870000
+    m_LastClickedID: 34728
+    m_ExpandedIDs: 00000000b25a0000b45a0000b65a0000b85a0000ba5a0000bc5a0000be5a0000c05a0000
+>>>>>>> takeo
+>>>>>>> origin/master
+>>>>>>> origin/yama
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -747,10 +1010,24 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1067
     y: 73
     width: 298
     height: 614
+=======
+<<<<<<< HEAD
+    x: 1026.4
+    y: 80.8
+    width: 325
+    height: 695
+=======
+    x: 1466
+    y: 73
+    width: 453
+    height: 926
+>>>>>>> origin/master
+>>>>>>> origin/yama
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -759,7 +1036,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 344.00006
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -786,10 +1063,23 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
+    x: 7.2000003
+    y: 80.8
+    width: 200
+    height: 423
+=======
     x: 0
+<<<<<<< HEAD
     y: 73.6
     width: 329.4
     height: 420.6
+=======
+    y: 73
+    width: 362
+    height: 540
+>>>>>>> origin/master
+>>>>>>> origin/yama
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -802,7 +1092,14 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 6afbffff
+<<<<<<< HEAD
 >>>>>>> origin/kama
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> takeo
+>>>>>>> origin/master
+>>>>>>> origin/yama
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -847,10 +1144,24 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 330.4
     y: 73.6
     width: 749.19995
     height: 420.6
+=======
+<<<<<<< HEAD
+    x: 208
+    y: 80.8
+    width: 816
+    height: 423
+=======
+    x: 363
+    y: 73
+    width: 1101
+    height: 540
+>>>>>>> origin/master
+>>>>>>> origin/yama
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 76f1a392df82ad84f9ae62a723f446f0
@@ -964,10 +1275,24 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 468
     y: 181
     width: 973
     height: 501
+=======
+<<<<<<< HEAD
+    x: 208
+    y: 80.8
+    width: 816
+    height: 423
+=======
+    x: 363
+    y: 73
+    width: 1101
+    height: 540
+>>>>>>> origin/master
+>>>>>>> origin/yama
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &16
 MonoBehaviour:

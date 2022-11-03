@@ -20,6 +20,11 @@ public class TargetBulletGenerate : MonoBehaviour
     private float Hinterval;
     //経過時間
     private float Htime = 0.0f;
+    //プレイヤーと敵の距離
+    private float distance;
+    //弾を止める時の距離
+    public float BulletStop = 20.0f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,23 +46,29 @@ public class TargetBulletGenerate : MonoBehaviour
         //プレイヤーの方向を向く
         transform.LookAt(Player.transform);
 
+        //プレイヤーと敵の位置
+        distance = TEnemy.transform.position.z - Player.transform.position.z;
+
         //経過時間が生成時間になったとき(生成時間より大きくなったとき)
         if (Htime > Hinterval)
         {
-            //弾をインスタンス化する(生成する)
-            GameObject Hbullet = Instantiate(TbulletObject);
-            //生成した弾の位置をランダム(X=-20～20,Y=0,Z=50)に設定する
-            Hbullet.transform.position = TEnemy.transform.position;
+            if (distance > BulletStop)
+            {
+                //弾をインスタンス化する(生成する)
+                GameObject Hbullet = Instantiate(TbulletObject);
+                //生成した弾の位置をランダム(X=-20～20,Y=0,Z=50)に設定する
+                Hbullet.transform.position = TEnemy.transform.position;
 
-            //エフェクトを生成する
-            GameObject effect = Instantiate(TbulletEffect) as GameObject;
-            //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
-            effect.transform.position = Hbullet.transform.position;
-  
-            //経過時間を初期化して再度時間計測を始める
-            Htime = 0.0f;
-            //次に発生する時間間隔を決定する
-            Hinterval = GetRandomTime();
+                //エフェクトを生成する
+                GameObject effect = Instantiate(TbulletEffect) as GameObject;
+                //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
+                effect.transform.position = Hbullet.transform.position;
+
+                //経過時間を初期化して再度時間計測を始める
+                Htime = 0.0f;
+                //次に発生する時間間隔を決定する
+                Hinterval = GetRandomTime();
+            }
 
         }
     }
