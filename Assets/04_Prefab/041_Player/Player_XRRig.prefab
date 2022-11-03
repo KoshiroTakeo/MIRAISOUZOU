@@ -9665,133 +9665,125 @@ MonoBehaviour:
   m_GameObject: {fileID: 2571242799231300448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80a6177023ec60c4eb0be2376881c997, type: 3}
+  m_Script: {fileID: 11500000, guid: c29a0a5401f78e44aa2813431b9f79a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fHoldValue: 0.7
   TriggerAction_L:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Trigger Action_L
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 34368c16-b789-40d9-83d6-3c3232a7a1a4
+      m_Id: 99748b8f-94ed-41b0-9132-0e201852edbd
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   GripAction_L:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Grip Action_L
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 9954d729-bf6d-4d43-8d0d-e2a276e4f37b
+      m_Id: d60ff9de-02c9-4786-8560-ffc4eac9a961
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   ButtonAction_X:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Button Action_X
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: b7a423ed-c699-4185-8470-8bbf7dce8bd5
+      m_Id: e24134c6-851d-4636-a9df-046d4edbf9d7
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -1353823168471479298, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   ButtonAction_Y:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Button Action_Y
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 7bdd1b60-82e5-43b3-b80f-b8bb069d7d34
+      m_Id: 89fabec5-9fb3-49f3-b56f-a75695df4679
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 1242936602227195661, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   ButtonAction_Menu:
     m_UseReference: 0
     m_Action:
       m_Name: Button Action_Menu
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 619821a6-b204-4828-8e28-362e28d33fb1
+      m_Id: be7b6796-c449-4ac2-a155-89e9f998bcbf
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
   TriggerAction_R:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Trigger Action_R
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: a6ca382d-9cf9-474e-84ca-e2a1419122a0
+      m_Id: a38eeb8a-70aa-4015-81a0-4f85b1386922
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   GripAction_R:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Grip Action_R
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: ec9aa741-40a3-4a07-87ed-71cd6253491e
+      m_Id: b4fafd88-c049-4b16-92c1-c23758570f07
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   ButtonAction_A:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Button Action_A
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: e26a875e-c935-4429-a271-b367d3c3f181
+      m_Id: cd19148e-9ed2-41b6-ad03-b29d2dfacd3c
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 4947709631833201284, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   ButtonAction_B:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Button Action_B
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 5337fd3d-4f87-4f4e-bc58-b096ce2a7370
+      m_Id: f6dd3092-ecb6-4bf9-94a8-7ece71148db0
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -6625509227526171791, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
   ButtonAction_Start:
     m_UseReference: 0
     m_Action:
       m_Name: Button Action_Start
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 6ab8dbbd-9140-4d86-9831-9843028fb966
+      m_Id: 60fd8ef5-f3f2-4582-a3e0-b37e769e38e6
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
