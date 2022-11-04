@@ -176,8 +176,8 @@
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\LanguagePackInfo.cs" />
     <Compile Include="Assets\Oculus\Platform\Samples\VrHoops\Scripts\VREyeRaycaster.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\SystemVoipState.cs" />
-    <Compile Include="Assets\Oculus\Platform\Scripts\Models\RejoinDialogResult.cs" />
     <Compile Include="Assets\Oculus\Platform\Samples\VrVoiceChat\Scripts\RoomManager.cs" />
+    <Compile Include="Assets\Oculus\Platform\Scripts\Models\RejoinDialogResult.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\NetSyncVoipAttenuationValue.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\KeyValuePairType.cs" />
     <Compile Include="Assets\Oculus\Platform\Scripts\Models\AssetDetails.cs" />
