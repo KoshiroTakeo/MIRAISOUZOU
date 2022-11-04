@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Field
+  - Enemy
+  - Manager
+  - EnemyAttack
+  - PlayerAttack
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -12,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Boss
   - 
   - 
   - 

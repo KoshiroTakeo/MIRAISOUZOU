@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 386c453885cd60f4693c271cf68ef0df
+=======
 guid: 0819a8cd4430b73449e3993a788c2a7b
+>>>>>>> origin/kama
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

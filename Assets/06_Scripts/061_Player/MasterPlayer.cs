@@ -5,10 +5,11 @@
 // 20220728:可用性向上のため再構築
 //======================================================================
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace VR.Players
 {
-    public class MasterPlayer : MonoBehaviour
+    public class MasterPlayer : MonoBehaviour,IInputable
     {
         // 各クラス必要コンポーネント（Unity依存）
         CharacterController PlayerCharacter; 
@@ -19,16 +20,16 @@ namespace VR.Players
 
         // Playerのパラメータデータ
         [SerializeField] PlayerData Data; // スクリプタブル
-        PlayerParameter Parameter;
+        [SerializeField] PlayerParameter Parameter;
 
         // 移動クラス
-        StickMover NormalMove; // アナログスティックによる移動
         HoverMover HoverMove;  // 浮遊移動
 
-        // 攻撃クラス
+        // ゲームマネージャー
+        GameManager Manager;
 
-        // エフェクトクラス
 
+       
 
         private void Start()
         {
@@ -45,28 +46,109 @@ namespace VR.Players
 
 
             Parameter = new PlayerParameter(Data);
-            NormalMove = new StickMover();
             HoverMove = new HoverMover();
 
-            
+            Manager = GameObject.FindWithTag("Manager").GetComponent<GameManager>();
         }
 
         private void Update()
         {
-            if (OVRInput.GetDown(OVRInput.RawButton.B))
+            // 死亡したらこれより先実行しない
+            if (Parameter.bDeath)
             {
-                // 現在位置を原点とし、移動開始の地点とする
-                InitirizeAnchorPos = AnchorObject.transform.position;
+                Manager.OnGameOver();
+                return;
             }
 
             // 浮遊移動
             HoverMove.HeadInclinationMove(this.gameObject ,PlayerCharacter, AnchorObject.transform.position, InitirizeAnchorPos,Parameter.fSpeed);
         }
 
-        private void LateUpdate()
+        // 左コントローラー処理
+        public void PressTriggerAction_L()
         {
             
         }
+        public void HoldTriggerAction_L(float value)
+        {
+
+        }
+
+        public void PressGripAction_L()
+        {
+
+        }
+
+        public void HoldGripAction_L(float value)
+        {
+
+        }
+
+        public void PressButton_X()
+        {
+            
+        }
+
+        public void PressButton_Y()
+        {
+           
+        }
+
+        public void PressButton_Menu()
+        {
+
+        }
+
+        // 右コントローラー処理
+        public void PressTriggerAction_R()
+        {
+            
+        }
+
+        public void HoldTriggerAction_R(float value)
+        {
+
+        }
+
+        public void PressGripAction_R()
+        {
+
+        }
+
+        public void HoldGripAction_R(float value)
+        {
+
+        }
+
+        public void PressButton_A()
+        {
+            
+        }
+
+        public void PressButton_B()
+        {
+            
+        }
+
+        public void PressButton_Start()
+        {
+
+        }
+
+        // 接触判定
+        private void OnTriggerEnter(Collider collider)
+        {
+            if (collider.gameObject.tag == "EnemyAttack")
+            {
+                StartCoroutine(Parameter.OnArmorTime());
+                Manager.CheckDamage();
+                Parameter.CheckHP();
+            }
+
+        }
+
+        
+        
     }
 }
 

@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 35753440e06ddd54e85238c39bdc0e0e
+=======
+<<<<<<<< HEAD:Assets/99_AssetStore/DBK/Editor.meta
+guid: 965fe29af4aab7c45a2febd0d1a88b31
+========
 guid: 4c5877bcdabc3c44f8b4459898a134a9
+>>>>>>>> origin/kama:Assets/GeurillaDroids.meta
+>>>>>>> origin/kama
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
