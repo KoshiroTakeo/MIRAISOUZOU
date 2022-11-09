@@ -12,7 +12,7 @@ namespace VR.Players
     public class HoverMover 
     {
         // 必要なもの
-        public float fRadius = 0.2f; // 加速開始距離
+        public float fRadius = 0.1f; // 加速開始距離
         public float fbrakepower = 2f;  // ブレーキ強度
         public float fstopmagnitude = 1f;
 
