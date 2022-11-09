@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 
 namespace VR.Players
 {
-    public class MasterPlayer : MonoBehaviour
+    public class MasterPlayer : MonoBehaviour//,IInputable
     {
         // 各クラス必要コンポーネント（Unity依存）
         CharacterController PlayerCharacter; 
@@ -64,24 +64,76 @@ namespace VR.Players
             HoverMove.HeadInclinationMove(this.gameObject ,PlayerCharacter, AnchorObject.transform.position, InitirizeAnchorPos,Parameter.fSpeed);
         }
 
-        // 各ボタン押したら起こる事たち
-        public void SkillAction(InputAction.CallbackContext context)
+        // 左コントローラー処理
+        public void PressTriggerAction_L()
         {
-            Debug.Log(context);
-            if (context.performed)
-            {
-                Debug.Log("長押しされたよ！");
-                Manager.OnSkill();
-            }
+            
+        }
+        public void HoldTriggerAction_L(float value)
+        {
+
+        }
+
+        public void PressGripAction_L()
+        {
+
+        }
+
+        public void HoldGripAction_L(float value)
+        {
+
+        }
+
+        public void PressButton_X()
+        {
             
         }
 
-        public void MenuAction()
+        public void PressButton_Y()
+        {
+           
+        }
+
+        public void PressButton_Menu()
         {
 
         }
 
+        // 右コントローラー処理
+        public void PressTriggerAction_R()
+        {
+            
+        }
 
+        public void HoldTriggerAction_R(float value)
+        {
+
+        }
+
+        public void PressGripAction_R()
+        {
+
+        }
+
+        public void HoldGripAction_R(float value)
+        {
+
+        }
+
+        public void PressButton_A()
+        {
+            
+        }
+
+        public void PressButton_B()
+        {
+            
+        }
+
+        public void PressButton_Start()
+        {
+
+        }
 
         // 接触判定
         private void OnTriggerEnter(Collider collider)

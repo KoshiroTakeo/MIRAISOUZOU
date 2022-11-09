@@ -666,6 +666,7 @@ MonoBehaviour:
   HbulletEffect: {fileID: 3461540734357188346, guid: 2f743028a3e97cd4c9512a6c811e1c08,
     type: 3}
   Player: {fileID: 53558478}
-  HEnemy: {fileID: 377602290087659823, guid: 0bd6b62e22a26794485fa90a14d554a5, type: 3}
+  HEnemy: {fileID: 3962334709551528425}
   minTime: 3
   maxTime: 5
+  BulletStop: 10

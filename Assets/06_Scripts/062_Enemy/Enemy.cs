@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public partial class EnemyCommon
 {
+    [SerializeField] GameManager gameMng = null;
     [SerializeField] Rigidbody rig;
     [SerializeField] int life;
     [SerializeField] GameObject weakpoint;
