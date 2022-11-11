@@ -9,7 +9,11 @@ using UnityEngine.InputSystem;
 
 namespace VR.Players
 {
+<<<<<<< HEAD
     public class MasterPlayer : MonoBehaviour//,IInputable
+=======
+    public class MasterPlayer : MonoBehaviour,IInputable
+>>>>>>> master
     {
         // 各クラス必要コンポーネント（Unity依存）
         CharacterController PlayerCharacter; 
