@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameSpeed: 1
   PlayerSpeed: 1
+  BulletLatePos: 50
   HitEffect: {fileID: 3461540734357188346, guid: 2f743028a3e97cd4c9512a6c811e1c08,
     type: 3}
   BulletDeletePos: -50
