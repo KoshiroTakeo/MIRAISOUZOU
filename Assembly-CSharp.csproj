@@ -116,6 +116,7 @@
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\P2PManager.cs" />
     <Compile Include="Assets\UB\Simple2dWeatherEffects\Standard\D2FogsPE.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\DebugUIBuilder.cs" />
+    <Compile Include="Assets\06_Scripts\061_Player\VRRig.cs" />
     <Compile Include="Assets\06_Scripts\065_System\IDamageble.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\TargetBulletGenerate.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\SampleUI.cs" />
@@ -148,6 +149,8 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportPoint.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\FingerTipPokeTool.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\GripPoses\Scripts\PoseEditHelper.cs" />
+    <Compile Include="Assets\06_Scripts\061_Player\VRFootIK.cs" />
+    <Compile Include="Assets\06_Scripts\061_Player\InputManager.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\State\StateAttack.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNavMesh.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\EnemyCommon.cs" />
@@ -166,6 +169,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ColliderZone.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MoviePlayerSampleControls.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillController.cs" />
+    <Compile Include="Assets\06_Scripts\061_Player\IK_TranceformModel.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SPPquad.cs" />
     <Compile Include="Assets\06_Scripts\065_System\GameStart.cs" />
     <Compile Include="Assets\06_Scripts\067_Field\AutoDestroy.cs" />
@@ -189,6 +193,7 @@
     <Compile Include="Assets\06_Scripts\065_System\Pool.cs" />
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\Attack.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\AnalyticsUI.cs" />
+    <Compile Include="Assets\06_Scripts\061_Player\VRAnimatorController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\BoneCapsuleTriggerLogic.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\ColorGrabbable.cs" />
     <Compile Include="Assets\06_Scripts\066_Weapon\SwordWeapon.cs" />
@@ -258,6 +263,7 @@
     <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateLeftPunch.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\RayTool.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\FingerTipPokeToolView.cs" />
+    <Compile Include="Assets\06_Scripts\061_Player\IInputable.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarTextureCopyManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlay\Scripts\OVROverlaySample.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateFistBump.cs" />
@@ -269,8 +275,6 @@
     <Compile Include="Assets\06_Scripts\064_UI\Transition.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
-    <Compile Include="Assets\06_Scripts\061_Player\InputManager.cs" />
-    <Compile Include="Assets\06_Scripts\061_Player\IInputable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UB\Simple2dWeatherEffects\Standard\D2Fogs.shader" />
