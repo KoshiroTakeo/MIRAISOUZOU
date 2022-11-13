@@ -1195,6 +1195,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &2089493798 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2571242799231300459, guid: 7431c01b503c0ba44ba73a2c78865a23,
+    type: 3}
+  m_PrefabInstance: {fileID: 2038160513692176653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2107341688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,12 +1642,12 @@ PrefabInstance:
     - target: {fileID: 2571242799231300456, guid: 7431c01b503c0ba44ba73a2c78865a23,
         type: 3}
       propertyPath: ButtonAction_Menu.m_UseReference
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2571242799231300456, guid: 7431c01b503c0ba44ba73a2c78865a23,
         type: 3}
       propertyPath: ButtonAction_Start.m_UseReference
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4087068902822130465, guid: 7431c01b503c0ba44ba73a2c78865a23,
         type: 3}
@@ -1919,7 +1925,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2089493798}
     - target: {fileID: 7568911008357266473, guid: fabbdeac98441e34497c9e4c32091bda,
         type: 3}
       propertyPath: stagenum.Array.data[1]
