@@ -56,9 +56,13 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Editor\OVROverlayCanvasEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildSamples.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\Oculus\SampleFramework\Core\Gradle\Editor\Utils.cs" />
+=======
     <Compile Include="Assets\99_AssetStore\DBK\Editor\DBK_MeshCombine.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Gradle\Editor\Utils.cs" />
     <Compile Include="Assets\99_AssetStore\DBK\Editor\DBK_ColorThemeSelectEditor.cs" />
+>>>>>>> kama
     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Firebase\Editor\FirebaseEnabler.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\AndroidVideoEditorUtil.cs" />

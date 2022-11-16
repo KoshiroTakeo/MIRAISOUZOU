@@ -64,10 +64,20 @@
     <Compile Include="Assets\06_Scripts\062_Enemy\State\StateLeave.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSettings.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\State\StateChangemode.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\06_Scripts\061_Player\KeyMoveTest.cs" />
+    <Compile Include="Assets\06_Scripts\062_Enemy\StateBase.cs" />
+    <Compile Include="Assets\10_Fade\Scripts\FadeUI.cs" />
+    <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughProjectionSurface.cs" />
+    <Compile Include="Assets\Oculus\Avatar\Scripts\GazeTarget.cs" />
+    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerDisplay.cs" />
+    <Compile Include="Assets\06_Scripts\067_Field\FieldMove.cs" />
+=======
     <Compile Include="Assets\06_Scripts\062_Enemy\StateBase.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughProjectionSurface.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\GazeTarget.cs" />
     <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerDisplay.cs" />
+>>>>>>> kama
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\CowController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\HandMeshUI.cs" />
@@ -86,6 +96,11 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportDestination.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainButtonVisualController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\GrabObject.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\10_Fade\Scripts\IFade.cs" />
+    <Compile Include="Assets\06_Scripts\061_Player\InputManager.cs" />
+=======
+>>>>>>> kama
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\SimpleCapsuleWithStickMovement.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\AugmentedObject.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableRegistry.cs" />
@@ -100,6 +115,10 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\CharacterCameraConstraint.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\SpatialAnchorSession.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\LocalAvatar\Scripts\GazeTargetSpawner.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\06_Scripts\064_UI\DamageUI.cs" />
+=======
+>>>>>>> kama
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionWarp.cs" />
     <Compile Include="Assets\06_Scripts\061_Player\MoveAnchor.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\BulletHit.cs" />
@@ -109,11 +128,17 @@
     <Compile Include="Assets\06_Scripts\062_Enemy\HomingBulletGenerate.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\PauseOnInputLoss.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableToolsCreator.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\P2PManager.cs" />
+    <Compile Include="Assets\UB\Simple2dWeatherEffects\Standard\D2FogsPE.cs" />
+    <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\DebugUIBuilder.cs" />
+=======
     <Compile Include="Assets\06_Scripts\065_System\PoolableObject.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\P2PManager.cs" />
     <Compile Include="Assets\UB\Simple2dWeatherEffects\Standard\D2FogsPE.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\DebugUIBuilder.cs" />
     <Compile Include="Assets\06_Scripts\061_Player\VRRig.cs" />
+>>>>>>> kama
     <Compile Include="Assets\06_Scripts\065_System\IDamageble.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\TargetBulletGenerate.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\SampleUI.cs" />
@@ -146,8 +171,12 @@
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportPoint.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\FingerTipPokeTool.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\GripPoses\Scripts\PoseEditHelper.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\06_Scripts\065_System\MusicPlayer\MusicPlayer.cs" />
+=======
     <Compile Include="Assets\06_Scripts\061_Player\VRFootIK.cs" />
     <Compile Include="Assets\06_Scripts\061_Player\InputManager.cs" />
+>>>>>>> kama
     <Compile Include="Assets\06_Scripts\062_Enemy\State\StateAttack.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNavMesh.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\EnemyCommon.cs" />
@@ -155,6 +184,10 @@
     <Compile Include="Assets\GeurillaDroids\Scripts\FI_DroidStatistics.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\ControllerBoxController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\AppDeeplink\UI\CustomDebugUI.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\06_Scripts\064_UI\RecoveryUI.cs" />
+=======
+>>>>>>> kama
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\ButtonDownListener.cs" />
     <Compile Include="Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\ColorChanger.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerLaser.cs" />
@@ -162,11 +195,18 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughController.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatar.cs" />
     <Compile Include="Assets\GeurillaDroids\Scripts\FI_ClipRandomizer.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\06_Scripts\064_UI\FogGenerator.cs" />
+=======
+>>>>>>> kama
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarMaterialManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ColliderZone.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MoviePlayerSampleControls.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillController.cs" />
+<<<<<<< HEAD
+=======
     <Compile Include="Assets\06_Scripts\061_Player\IK_TranceformModel.cs" />
+>>>>>>> kama
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SPPquad.cs" />
     <Compile Include="Assets\06_Scripts\065_System\GameStart.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\LaserPointer.cs" />
@@ -182,6 +222,14 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\DebugUI\DebugUISample.cs" />
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\HPberCameraUI\FollowHUD.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\BrushController.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerController.cs" />
+    <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ButtonTriggerZone.cs" />
+    <Compile Include="Assets\06_Scripts\064_UI\EventSet.cs" />
+    <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\Attack.cs" />
+    <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\AnalyticsUI.cs" />
+    <Compile Include="Assets\10_Fade\Scripts\Fade.cs" />
+=======
     <Compile Include="Assets\99_AssetStore\DBK\Scripts\DBK_ColorThemeSelect.cs" />
     <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ButtonTriggerZone.cs" />
@@ -189,6 +237,7 @@
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\Attack.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\AnalyticsUI.cs" />
     <Compile Include="Assets\06_Scripts\061_Player\VRAnimatorController.cs" />
+>>>>>>> kama
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\BoneCapsuleTriggerLogic.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\ColorGrabbable.cs" />
     <Compile Include="Assets\06_Scripts\066_Weapon\SwordWeapon.cs" />
@@ -196,6 +245,10 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Scripts\DistanceGrabberSample.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\HandsManager.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSettingsEditor.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\10_Fade\Scripts\FadeManager.cs" />
+=======
+>>>>>>> kama
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SceneSampler.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarPacket.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNode.cs" />
@@ -218,12 +271,20 @@
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarLogger.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillBladesController.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\06_Scripts\065_System\Hoge.cs" />
+=======
+>>>>>>> kama
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarRemoteDriver.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarHand.cs" />
     <Compile Include="Assets\06_Scripts\064_UI\Transition02.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerTouch.cs" />
     <Compile Include="Assets\06_Scripts\061_Player\PlayerParameter.cs" />
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\Cutter.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\06_Scripts\061_Player\IInputable.cs" />
+=======
+>>>>>>> kama
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\PlayerHP.cs" />
     <Compile Include="Assets\06_Scripts\064_UI\YW_Ploglam\RotateDamageUI.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\VoipManager.cs" />
@@ -252,12 +313,19 @@
     <Compile Include="Assets\Oculus\Avatar\Samples\AvatarGallery\Scripts\OvrAvatarTestDriver.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarDriver.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainCarBase.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\10_Fade\Scripts\FadeImage.cs" />
+=======
+>>>>>>> kama
     <Compile Include="Assets\UB\Simple2dWeatherEffects\Standard\D2FogsNoiseTexPE.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarComponent.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateLeftPunch.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\RayTool.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\FingerTipPokeToolView.cs" />
+<<<<<<< HEAD
+=======
     <Compile Include="Assets\06_Scripts\061_Player\IInputable.cs" />
+>>>>>>> kama
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarTextureCopyManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlay\Scripts\OVROverlaySample.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\State\Boss1\StateFistBump.cs" />
@@ -267,9 +335,15 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
     <Compile Include="Assets\06_Scripts\062_Enemy\TestEnemyMove.cs" />
     <Compile Include="Assets\06_Scripts\064_UI\Transition.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
+    <Compile Include="Assets\06_Scripts\064_UI\FogDistance.cs" />
+=======
     <Compile Include="Assets\06_Scripts\067_Field\FieldMove.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
+>>>>>>> kama
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UB\Simple2dWeatherEffects\Standard\D2Fogs.shader" />
@@ -294,8 +368,15 @@
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainPropsShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
+<<<<<<< HEAD
+    <None Include="Assets\10_Fade\Materials\UI-Fade-Cutout.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_Mobile_CombinedMeshExpressive.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
+    <None Include="Assets\09_Shader\Fog.shader" />
+=======
+    <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_Mobile_CombinedMeshExpressive.shader" />
+    <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
+>>>>>>> kama
     <None Include="Assets\UB\Simple2dWeatherEffects\Standard\D2FogsNoiseTex.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBSV2.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_CombinedMesh.shader" />
@@ -305,6 +386,10 @@
     <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Default Correct.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_01.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarPBRV2Simple.shader" />
+<<<<<<< HEAD
+    <None Include="Assets\10_Fade\Materials\UI-Mask.shader" />
+=======
+>>>>>>> kama
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
     <None Include="Assets\99_AssetStore\Desert Buildings\Read me.txt" />
     <None Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Shaders\OculusSampleAlphaHandOutline.shader" />
@@ -315,6 +400,10 @@
     <None Include="Assets\99_AssetStore\WorldMaterialsFree\Shaders\WorldMatURPFree.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
     <None Include="Assets\99_AssetStore\SkySeries Freebie\Hdri setup.txt" />
+<<<<<<< HEAD
+    <None Include="Assets\10_Fade\Materials\UI-Fade-Alpha.shader" />
+=======
+>>>>>>> kama
     <None Include="Assets\09_Shader\FadeShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
     <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered.shader" />
@@ -324,7 +413,10 @@
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_02.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_DiffBump.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_Mobile_SingleComponentExpressive.shader" />
+<<<<<<< HEAD
+=======
     <None Include="Assets\99_AssetStore\DBK\HDRP &amp; URP\readme.txt" />
+>>>>>>> kama
     <None Include="Assets\Oculus\SampleFramework\license.txt" />
   </ItemGroup>
   <ItemGroup>
