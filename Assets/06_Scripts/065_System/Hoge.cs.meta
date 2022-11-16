@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/06_Scripts/065_System/Hoge.cs.meta
+guid: e746cbfd92fbde0428d0e6c8c97804d1
+========
+guid: c29a0a5401f78e44aa2813431b9f79a6
+>>>>>>>> kama:Assets/06_Scripts/061_Player/InputManager.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
