@@ -8,7 +8,7 @@ public class FieldMove : MonoBehaviour
     public float Field_Speed = 0;
 
     //フィールド再設置位置オブジェクト
-    public GameObject Pop_Point;
+    private GameObject Pop_Point;
 
     //GemeManagerの変数持ってくる用
     private GameManager GameMng;
@@ -21,10 +21,14 @@ public class FieldMove : MonoBehaviour
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //フィールドの移動実行
-        transform.position -= new Vector3(0, 0, Time.deltaTime * Field_Speed * GameMng.WorldTime * GameMng.AccelSpeed);
+        Vector3 Field_Pos = transform.position;
+
+        Field_Pos.z -= Time.deltaTime * Field_Speed * GameMng.WorldTime * GameMng.AccelSpeed;
+
+        transform.position = Field_Pos;
 
         if (transform.position.z <= -5.0f)
         {

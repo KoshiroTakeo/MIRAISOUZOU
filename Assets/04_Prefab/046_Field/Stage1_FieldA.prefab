@@ -1334,13 +1334,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6947139080960082957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 684d1a1c0c93c3b45ac66ae596a1f010, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fff30417bcc4c14ca22cc1001283679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onGround: 1
-  inJumping: 0
-  Speed: -50
-  Damage_Speed: 0
+  Field_Speed: 50
 --- !u!1 &6964372004806206102
 GameObject:
   m_ObjectHideFlags: 0
