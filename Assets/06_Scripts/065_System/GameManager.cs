@@ -8,8 +8,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject PlayerObj;
-
     public float WorldTime = 1.0f; // ゲーム時間
     public float AccelSpeed = 1.0f; // プレイヤーの加速度
     float fMinSpeed = 0.5f; // 最低速度

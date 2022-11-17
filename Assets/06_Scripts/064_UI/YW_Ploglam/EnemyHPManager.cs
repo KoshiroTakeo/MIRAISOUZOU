@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class EnemyHPManager : MonoBehaviour
 {
+    public GameObject Boss;
+
     //Å@ç≈ëÂHP
     [SerializeField]
     private int maxHP = 10000;
@@ -38,7 +40,7 @@ public class EnemyHPManager : MonoBehaviour
     {
         hpSlider = transform.Find("HUD/Canvas/HPSlider").GetComponent<Slider>();
         bulkHPSlider = transform.Find("HUD/Canvas/BlukSlider").GetComponent<Slider>();
-        hp = maxHP;
+        hp = maxHP = GameObject.FindWithTag("Boss").GetComponent<EnemyCommon>().Life;
         finalHP = maxHP;
         hpSlider.value = 1;
         bulkHPSlider.value = 1;
