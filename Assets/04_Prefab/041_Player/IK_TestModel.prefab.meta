@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/04_Prefab/044_UI/DamageEffect.prefab.meta
+guid: a6c2b032e979d954b8a4d638bcfda333
+========
 guid: 7bdf04b2f570a364fae46009af45863d
+>>>>>>>> kama:Assets/04_Prefab/041_Player/IK_TestModel.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

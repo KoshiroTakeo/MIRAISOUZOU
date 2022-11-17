@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/06_Scripts/061_Player/InputManager.cs.meta
+guid: 71ebb69578487f24fa0bad9228bdef84
+========
 guid: 0c4ded034777c0b4292347405f3d2d19
+>>>>>>>> kama:Assets/06_Scripts/061_Player/IK_TranceformModel.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

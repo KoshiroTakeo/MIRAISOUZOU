@@ -4,34 +4,62 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
-public class GameStart : MonoBehaviour
+public class GameStart : MonoBehaviour,IMusic
 {
-    GameObject se;
-    public float timer = 3.0f;
+
+    AudioSource audioSource;
+
+    public GameObject buttonObj;
+    
     private bool firstPush = false;
+
+    //FadeCanvas取得
+    [SerializeField]
+    private Fade fade;
+
+    //フェード時間取得（秒）
+    [SerializeField]
+    private float fadeTime;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        timer = 0;
         firstPush = false;
 
-        se = GameObject.Find("SE");
+        audioSource = buttonObj.GetComponent<AudioSource>();
+    }
 
-        if (se == null)
+    //------------------------------------------------------------------
+    //
+    AudioClip[] IMusic.GetAudioClips()
+    {
+        return MusicPlayer.instance.soundList;
+    }
+
+    void IMusic.PlaySound(int No)
+    {
+        audioSource.PlayOneShot(MusicPlayer.instance.soundList[No]);
+    }
+
+    void IMusic.StopSound()
+    {
+        audioSource.Stop();
+    }
+    //------------------------------------------------------------------
+
+    public void PushFadeout()
+    {
+        fade.FadeOut(fadeTime);
+    }
+
+    public void PushFadein()
+    {
+        fade.FadeIn(fadeTime, () =>
         {
-            Debug.Log("SEが設定されていないよ。");
-        }
-    }
-
-    void Update()
-    {
-    }
-
-    IEnumerator DelayMethod()
-    {
-        //delay秒待つ
-        yield return new WaitForSeconds(timer);
+            fade.FadeOut(fadeTime);
+        });
     }
 
     public void sceneChange(string sceneName)//ボタン操作などで呼び出す
@@ -39,14 +67,22 @@ public class GameStart : MonoBehaviour
         if (!firstPush)
         {
             // SEを流す
-            se.GetComponent<SEManager>().PlaySE(1);
-            StartCoroutine(DelayMethod());
+            IMusic iMusic = buttonObj.GetComponent<IMusic>();
+            if (iMusic != null)
+            {
+                iMusic.PlaySound(0);
+            }
 
             /*処理*/
             // サブシーンに切り替える
-            SceneManager.LoadScene(sceneName);
+            //フェードを掛けてからシーン遷移する
+            fade.FadeIn(fadeTime, () =>
+            {
+                SceneManager.LoadScene(sceneName);
+            });
 
             firstPush = true;
         }
     }
+
 }

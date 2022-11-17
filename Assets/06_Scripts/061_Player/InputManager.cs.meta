@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/06_Scripts/061_Player/InputManager.cs.meta
+guid: 65cb04d483e711a4cb5788aff4d9d9ce
+========
+guid: 0c4ded034777c0b4292347405f3d2d19
+>>>>>>>> kama:Assets/06_Scripts/061_Player/IK_TranceformModel.cs.meta
+=======
+<<<<<<<< HEAD:Assets/06_Scripts/065_System/Hoge.cs.meta
+guid: e746cbfd92fbde0428d0e6c8c97804d1
+========
 guid: c29a0a5401f78e44aa2813431b9f79a6
+>>>>>>>> kama:Assets/06_Scripts/061_Player/InputManager.cs.meta
+>>>>>>> kama
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

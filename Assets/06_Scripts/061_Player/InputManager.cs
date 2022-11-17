@@ -82,8 +82,8 @@ public class InputManager : MonoBehaviour
     public void InputTrigger_L(float _value, bool _press)
     {
         if (_value >= fHoldValue) InputPlayer.HoldTriggerAction_L(_value);
-        if(_press == true)InputPlayer.PressTriggerAction_L();
-        
+        if (_press == true) InputPlayer.PressTriggerAction_L();
+
     }
     public void InputTrigger_R(float _value, bool _press)
     {
@@ -94,13 +94,13 @@ public class InputManager : MonoBehaviour
     {
         if (_value <= fHoldValue) InputPlayer.HoldGripAction_L(_value); ;
         if (_press == true) InputPlayer.PressGripAction_L();
-        
+
     }
     public void InputGrip_R(float _value, bool _press)
     {
         if (_value <= fHoldValue) InputPlayer.HoldGripAction_R(_value); ;
         if (_press == true) InputPlayer.PressGripAction_R();
-        
+
     }
     public void InputButton_A(bool _on)
     {

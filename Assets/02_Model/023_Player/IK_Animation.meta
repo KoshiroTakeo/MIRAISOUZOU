@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/06_Scripts/065_System/MusicPlayer.meta
+guid: 156e40849cf49f9409a0be4d2b6f894d
+========
 guid: 4d0d74e107abe024b89e3b467d3c54ff
+>>>>>>>> kama:Assets/02_Model/023_Player/IK_Animation.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

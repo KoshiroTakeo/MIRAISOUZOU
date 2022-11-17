@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.sysroot.linux-x86_64@2.0.2/Editor/Unity.Sysroot.cs.meta
+guid: 1fa9f6b0297ee3c4e8401e4545f05a2a
+========
 guid: 8a6c5dd547ab26d4f90e7370432fb505
+>>>>>>>> kama:Assets/06_Scripts/061_Player/VRAnimatorController.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

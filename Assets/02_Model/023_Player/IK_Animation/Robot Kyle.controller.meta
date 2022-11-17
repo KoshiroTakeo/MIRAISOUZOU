@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/10_Fade/FadeMask.prefab.meta
+guid: 818b4ea1419800448afde55f5d0ea543
+timeCreated: 1450397163
+licenseType: Pro
+NativeFormatImporter:
+========
 guid: 7b115b53790e36045b142d12870c33a7
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
+>>>>>>>> kama:Assets/02_Model/023_Player/IK_Animation/Robot Kyle.controller.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
