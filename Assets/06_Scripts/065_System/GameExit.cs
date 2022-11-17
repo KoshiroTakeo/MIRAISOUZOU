@@ -1,27 +1,48 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //using UnityEngine.InputSystem;
 
-public class GameExit : MonoBehaviour
+public class GameExit : MonoBehaviour,IMusic
 {
-    GameObject se;
+    AudioSource audioSource;
+
+    public GameObject buttonObj;
 
     // Start is called before the first frame update
     void Start()
     {
-        se = GameObject.Find("SE");
-
-        if (se == null)
-        {
-            Debug.Log("SEが設定されていないよ。");
-        }
+        audioSource = GetComponent<AudioSource>();
     }
+
+    //------------------------------------------------------------------
+    //
+    AudioClip[] IMusic.GetAudioClips()
+    {
+        return MusicPlayer.instance.soundList;
+    }
+
+    void IMusic.PlaySound(int No)
+    {
+        audioSource.PlayOneShot(MusicPlayer.instance.soundList[No]);
+    }
+
+    void IMusic.StopSound()
+    {
+        audioSource.Stop();
+    }
+    //------------------------------------------------------------------
 
     //ゲーム終了:ボタンから呼び出す
     public void EndGame()
     {
-        se.GetComponent<SEManager>().PlaySE(1);
+        // SEを流す
+        IMusic iMusic = buttonObj.GetComponent<IMusic>();
+        if (iMusic != null)
+        {
+            iMusic.PlaySound(0);
+        }
 
         //#if UNITY_EDITOR
         // エディターから終了させたいとき

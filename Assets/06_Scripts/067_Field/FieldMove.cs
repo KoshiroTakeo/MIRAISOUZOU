@@ -4,38 +4,50 @@ using UnityEngine;
 
 public class FieldMove : MonoBehaviour
 {
+    //フィールド移動速度
+    public float Field_Speed = 0;
 
-    //キャラクターの操作状態を管理するフラグ
-    [SerializeField] public bool onGround = true;
-    [SerializeField] public bool inJumping = false;
+    //フィールド再設置位置オブジェクト
+<<<<<<< HEAD
+    public GameObject Pop_Point;
+=======
+    private GameObject Pop_Point;
+>>>>>>> kama
 
-    //public bool PlayerDamage = false;//プレイヤーダメージ判定
+    //GemeManagerの変数持ってくる用
+    private GameManager GameMng;
 
-    //rigidbodyオブジェクト格納用変数
-    Rigidbody rb;
-
-    //移動速度の定義
-    public float Speed = 0.0f;
-
-    //ダメージ時移動速度の定義
-    public float Damage_Speed = 0.0f;
-
-    //移動の係数格納用変数
-    float v;
-
-    void Update() //20220429 StartからUpdateへ訂正
+    private void Start()
     {
-        v = Time.deltaTime * Speed;
+        Pop_Point = GameObject.Find("FieldPopPoint");
 
-        //移動の実行
-        if (!inJumping)//空中での移動を禁止
+        GameMng = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+    }
+
+    void FixedUpdate()
+    {
+<<<<<<< HEAD
+        Vector3 Field_Pos = transform.position;
+        //フィールドの移動実行
+=======
+        //フィールドの移動実行
+        Vector3 Field_Pos = transform.position;
+
+>>>>>>> kama
+        Field_Pos.z -= Time.deltaTime * Field_Speed * GameMng.WorldTime * GameMng.AccelSpeed;
+
+        transform.position = Field_Pos;
+
+        if (transform.position.z <= -5.0f)
         {
-            transform.position += transform.forward * v;
+            transform.position = Pop_Point.transform.position;
         }
     }
 
+    //プレイヤーダメージ時減速
     public void PlayerDamage()
     {
-        v = Speed = Speed - 1.0f;
+        Field_Speed = Field_Speed - 1.0f;
     }
 }

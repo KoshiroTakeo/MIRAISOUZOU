@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{54EFAC27-25D0-1B1E-2E07-EB229EBD1790}</ProjectGuid>
+    <ProjectGuid>{189C2380-9EFB-9218-BA5B-ED91A77C858E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -56,9 +56,13 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Editor\OVROverlayCanvasEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildSamples.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\Oculus\SampleFramework\Core\Gradle\Editor\Utils.cs" />
+=======
     <Compile Include="Assets\99_AssetStore\DBK\Editor\DBK_MeshCombine.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Gradle\Editor\Utils.cs" />
     <Compile Include="Assets\99_AssetStore\DBK\Editor\DBK_ColorThemeSelectEditor.cs" />
+>>>>>>> kama
     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Firebase\Editor\FirebaseEnabler.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\AndroidVideoEditorUtil.cs" />
@@ -291,23 +295,11 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.WebGL.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UWP.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\15.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
@@ -675,235 +667,197 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.InteractionSubsystems">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.InteractionSubsystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.CoreUtils.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.CoreUtils.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.WindowsMixedReality.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
+      <HintPath>Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.ARSubsystems.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Oculus.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InteractiveTutorials.Core.Scripts">
+      <HintPath>Library\ScriptAssemblies\Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.InteractiveTutorialsFramework">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.WindowsMixedReality">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Sysroot.Linux_x86_64">
+      <HintPath>Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Subsystem.Registration">
+      <HintPath>Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InteractiveTutorials.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.InteractiveTutorials.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.CoreUtils">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Oculus">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.SysrootPackage.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{23EAEF40-C726-B6DE-5B4A-187ACDADEA86}</Project>
+      <Project>{2434B9C5-E7FF-1C55-305E-FC9ADD0A8CEC}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{8B78945B-80D2-F936-3A40-531670B18A6C}</Project>
-      <Name>UnityEditor.TestRunner</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{63AFE114-38D7-FE86-CD70-F04225BEB3FC}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{5A6D31A9-95B9-79D2-608D-A02DB8D448DE}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKEditor.csproj">
-      <Project>{6DB2DC17-55E7-06B2-28C6-D3CF2A78FA3E}</Project>
+      <Project>{7068DDF3-79C9-9C23-C798-4BE0A5DF6B49}</Project>
       <Name>AssistantCoreSDKEditor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{F5E16036-6E81-2E4E-A811-E054BAEA3BE2}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.csproj">
-      <Project>{7AA879A3-28FB-09D3-060C-987F1CCEA28B}</Project>
+      <Project>{28F2322C-9B78-D45B-47D0-ABFBDAC62104}</Project>
       <Name>Oculus.AudioManager</Name>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
-      <Project>{7AC7932C-D4D4-FF9B-6624-7B6FDB16363A}</Project>
+      <Project>{C1B78B5D-49A4-DD67-6829-544F6F9B9F45}</Project>
       <Name>AssistantCoreSDKRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Utils.Editor.csproj">
-      <Project>{F209237E-74A3-904B-77E4-265A70DFE6BB}</Project>
+      <Project>{5D33BBDC-5CFA-FF83-4E2F-F55512197E26}</Project>
       <Name>Oculus.AudioManager.Utils.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{FE0CB808-F04D-D992-0986-6A48EC5E50B2}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InputSystem.csproj">
-      <Project>{5E9AAEA4-6F1D-D44E-D275-308A749E3C87}</Project>
-      <Name>Unity.InputSystem</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{87D0622A-1504-77A0-898C-07091BFE9AB8}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{57D6D6A1-FB99-9D92-0A72-283F8745E7EA}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{6C28F0AD-A677-FE03-2B62-EE0E0D759D29}</Project>
-      <Name>UnityEngine.SpatialTracking</Name>
-    </ProjectReference>
     <ProjectReference Include="Facebook.WitAI.csproj">
-      <Project>{979E0ADB-D589-175D-E00F-505DC6FF85A1}</Project>
+      <Project>{6A29094F-3F57-1233-6CED-2602DF9A4FEF}</Project>
       <Name>Facebook.WitAI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{23395F99-1AFE-4BD3-A557-1FADDFAB124A}</Project>
-      <Name>Unity.EditorCoroutines.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.InteractionSubsystems.csproj">
-      <Project>{D5CA6A63-D44A-B7A3-1E79-A5D6654CF3B4}</Project>
-      <Name>Unity.XR.InteractionSubsystems</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.CoreUtils.Editor.csproj">
-      <Project>{242002C0-7262-81E8-3CD5-D02743CD413E}</Project>
-      <Name>Unity.XR.CoreUtils.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.WindowsMixedReality.Editor.csproj">
-      <Project>{C9BE791C-CB46-6F65-D5A1-BAA7D68BFBA0}</Project>
-      <Name>Unity.XR.WindowsMixedReality.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{43AEDBEC-A1D2-F927-4890-92F730EB1949}</Project>
+      <Project>{B8982287-DEAA-486B-D609-B23E46668385}</Project>
       <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{DDF8E6C5-D46D-A87E-101A-C8D87CA27D01}</Project>
+      <Project>{AC55BA0F-8831-9481-F294-E8BFABF7029B}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Audio.Editor.csproj">
-      <Project>{DA259CB4-82B3-E58C-3A96-5C432ACBF72F}</Project>
+      <Project>{77CAD57C-BE53-3A66-DA08-468977610FB6}</Project>
       <Name>Oculus.AudioManager.Audio.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64.csproj">
-      <Project>{E200E1DC-5FB8-04A7-F0B3-87F686316362}</Project>
-      <Name>Unity.Toolchain.Win-x86_64-Linux-x86_64</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.ARSubsystems.Editor.csproj">
-      <Project>{0D87130A-CC8F-D25A-8DC7-19DC98EB546A}</Project>
-      <Name>Unity.XR.ARSubsystems.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.Editor.csproj">
-      <Project>{30E702C2-9780-F091-C85C-36392F8EDF09}</Project>
+      <Project>{965E775B-B1BC-0E51-D597-0B78BB0AB499}</Project>
       <Name>Oculus.Spatializer.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.XR.Management.csproj">
-      <Project>{6C2527EE-63CB-D626-BECA-DCAD2A433481}</Project>
-      <Name>Unity.XR.Management</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
-      <Project>{A3ABC175-95E0-E548-48DA-FB646B94D0F3}</Project>
-      <Name>Unity.XR.ARSubsystems</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.Oculus.Editor.csproj">
-      <Project>{7D92EF21-4A12-9D77-D981-BA7201527C04}</Project>
-      <Name>Unity.XR.Oculus.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{271DDE29-A14F-DAD9-DFDF-ECEA3A4288D7}</Project>
+      <Project>{F496D695-38E4-EC57-88DC-5099C64247AE}</Project>
       <Name>Oculus.Platform</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.InteractiveTutorials.Core.Scripts.csproj">
-      <Project>{51C8CFA5-3242-AF32-8808-C8E4D940E66A}</Project>
-      <Name>Unity.InteractiveTutorials.Core.Scripts</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{C230E161-64F2-F079-7AB3-CA8CC0FC5C34}</Project>
+      <Project>{D5D01DEA-4696-D977-B64E-C291BB827BFC}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.InteractiveTutorialsFramework.csproj">
-      <Project>{ACB38784-011F-C67D-1F64-B8629BD905D6}</Project>
-      <Name>UnityEditor.InteractiveTutorialsFramework</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.WindowsMixedReality.csproj">
-      <Project>{CE8D4820-AB37-A4D3-8C5B-FADAA7897832}</Project>
-      <Name>Unity.XR.WindowsMixedReality</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{ED54C900-2401-95CF-1250-E89091FBF10E}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{7DA3CD97-9A93-7A14-49B0-2B530D7E84BF}</Project>
+      <Project>{F47FFA62-A155-A84E-52B9-EEDF8D03D10A}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Sysroot.Linux_x86_64.csproj">
-      <Project>{701754F4-2440-DBEA-FCCF-AC132E76B9C4}</Project>
-      <Name>Unity.Sysroot.Linux_x86_64</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.csproj">
-      <Project>{9181B601-653C-029C-64DE-C021154C6E21}</Project>
+      <Project>{83F303B1-8913-199E-FD5D-8BFB3B0E233C}</Project>
       <Name>Oculus.Spatializer</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.XR.Management.Editor.csproj">
-      <Project>{A0FA18DE-D209-006B-E1F7-2FC3AC6667FD}</Project>
-      <Name>Unity.XR.Management.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{21F4F0C5-D835-B9B3-C844-B2EE1B5A8BCB}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{36744384-DF5E-88F7-5C5E-8BA56002F3A6}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.Interaction.Toolkit.csproj">
-      <Project>{8870D6E2-AB4A-E7BF-4505-19CC007C11C0}</Project>
-      <Name>Unity.XR.Interaction.Toolkit</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Subsystem.Registration.csproj">
-      <Project>{E392C797-0328-D0D4-E902-83414775BF0A}</Project>
-      <Name>Unity.Subsystem.Registration</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{94C34BDC-2A8A-25C1-1CC7-D6828AFF95AC}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InteractiveTutorials.Core.csproj">
-      <Project>{7E830023-6178-985B-0A80-E1C327D26FE8}</Project>
-      <Name>Unity.InteractiveTutorials.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="VoiceSDK.Editor.csproj">
-      <Project>{986B33AB-D880-392E-075F-7A5689EC73E7}</Project>
+      <Project>{26109F6D-16B3-2041-ECC0-EF3F1771033E}</Project>
       <Name>VoiceSDK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Editor.csproj">
-      <Project>{153BC3C9-D3BD-1367-7E4F-DD28A56A8F56}</Project>
+      <Project>{2C53AA0A-AC41-B62B-A2E4-929F0EEEFAB8}</Project>
       <Name>Facebook.Wit.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
-      <Project>{1D83A5DA-4D98-933E-E034-5BB67FAB89A3}</Project>
-      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{B46A1F61-BF2A-F433-56A0-A96066E6810D}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.CoreUtils.csproj">
-      <Project>{8E6E3C4D-286C-4522-110B-50D77B4A2609}</Project>
-      <Name>Unity.XR.CoreUtils</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.Editor.csproj">
-      <Project>{7E20351B-6B97-C29E-FF59-C48E381D3382}</Project>
+      <Project>{BA947C25-742B-4405-34C6-F7302E8DEA9C}</Project>
       <Name>Oculus.LipSync.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
-      <Project>{BB449D15-B839-C42E-55A3-A4B5FE197DE5}</Project>
-      <Name>UnityEditor.XR.LegacyInputHelpers</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.csproj">
-      <Project>{04C6A896-EFEB-C57C-FDDB-EE0826D9CEBA}</Project>
+      <Project>{1093997E-98A4-59C6-2A15-0879E809503D}</Project>
       <Name>Oculus.LipSync</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Editor.csproj">
-      <Project>{308CB64C-6F9A-C3CB-B183-DBF166E378D2}</Project>
-      <Name>Unity.XR.Interaction.Toolkit.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
-      <Project>{9A3260DD-A341-2A46-DBFC-E4429BD28006}</Project>
+      <Project>{3D6AEA60-809F-6EF3-0689-594A941AF6AA}</Project>
       <Name>VoiceSDK.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.Oculus.csproj">
-      <Project>{26719A7A-7946-DFCE-DB14-3D00F37FAA15}</Project>
-      <Name>Unity.XR.Oculus</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
-      <Project>{5166D158-C320-70A8-09C0-EDB7AB5D81F8}</Project>
-      <Name>UnityEditor.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
-      <Project>{B19D23DF-1911-AEE0-5F72-69723E810162}</Project>
-      <Name>Unity.SysrootPackage.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
