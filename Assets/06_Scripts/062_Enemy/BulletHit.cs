@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletHit : MonoBehaviour
 {
     //弾のスピード
-    private float BulletSpeed = 2.1f; // 10/20竹尾変更中（元：0.1f）
+    private float BulletSpeed = 0.7f; // 10/20竹尾変更中（元：0.1f）
     //ゲームスピード
     public float GameSpeed = 1.0f;
     //プレイヤースピード
@@ -40,8 +40,9 @@ public class BulletHit : MonoBehaviour
     }
 
     // 当たり判定
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
+        Debug.Log(collision.name);
         //衝突したオブジェクトがPlayerだったとき
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -57,6 +58,8 @@ public class BulletHit : MonoBehaviour
         {
             //弾を削除
             Destroy(gameObject);
+
+            Debug.Log("斬れた");
 
             //エフェクトを発生させる
             //GenerateHitEffect();
