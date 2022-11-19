@@ -9,10 +9,11 @@ public partial class EnemyCommon
     [SerializeField] Rigidbody rig;
     [SerializeField] int life;
     [SerializeField] GameObject weakpoint;
-    //[SerializeField] GameObject player;
+    [SerializeField] GameObject player;
     [SerializeField] private float leave;   // —£‚ê‚é‹——£
     [SerializeField] private float idx;     // w”
     [SerializeField] private float mult;    // æ”
+    [SerializeField] private Animator anim;
 
     /// <summary>
     /// ‰Šú‰»ˆ—
@@ -62,6 +63,15 @@ public partial class EnemyCommon
         weakpoint.SetActive(true);
         
         Debug.Log("on");
+    }
+
+    private float DistanceCalc()
+    {
+        float result = 0.0f;
+
+        result = transform.position.z - player.transform.position.z;
+
+        return result;
     }
 
     private void OnTriggerEnter(Collider other)

@@ -2,25 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateAttack : StateBase
+public partial class EnemyCommon
 {
-    public override void OnEnter(EnemyCommon owner, StateBase prev)
+    public class StateAttack : StateBase
     {
-        //base.OnEnter(owner, prev);
-    }
+        public override void OnEnter(EnemyCommon owner, StateBase prev)
+        {
+            Debug.Log("WRYYYYY");
+        }
 
-    public override void OnUpdate(EnemyCommon owner)
-    {
-        //base.OnUpdate(owner);
-    }
+        public override void OnUpdate(EnemyCommon owner)
+        {
 
-    public override void OnFixedUpdate(EnemyCommon owner)
-    {
-        //base.OnFixedUpdate(owner);
-    }
+        }
 
-    public override void OnExit(EnemyCommon owner, StateBase next)
-    {
-        //base.OnExit(owner, next);
+        public override void OnFixedUpdate(EnemyCommon owner)
+        {
+
+        }
+
+        public override void OnExit(EnemyCommon owner, StateBase next)
+        {
+            owner.anim.SetBool("Attack", false);
+        }
     }
 }
+

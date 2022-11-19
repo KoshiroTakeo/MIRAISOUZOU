@@ -26,12 +26,12 @@ public class TestEnemyMove : MonoBehaviour
             dir = 1;
         }
 
-        transform.position += new Vector3(0f, 0f, 0.005f * dir);
-        if (transform.position.z > 35)
+        transform.position += new Vector3(0f, 0.005f * dir, 0f);
+        if (transform.position.x > 5)
         {
             dirY = -1;
         }
-        if (transform.position.z < 5)
+        if (transform.position.x < -5)
         {
             dirY = 1;
         }

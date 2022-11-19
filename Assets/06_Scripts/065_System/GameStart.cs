@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
 
 public class GameStart : MonoBehaviour,IMusic
 {
@@ -67,20 +66,23 @@ public class GameStart : MonoBehaviour,IMusic
         if (!firstPush)
         {
             // SEを流す
+            /*
             IMusic iMusic = buttonObj.GetComponent<IMusic>();
             if (iMusic != null)
             {
                 iMusic.PlaySound(0);
             }
+            */
+            SoundManager.Instance.PlaySE(SESoundData.SE.StartButton);
 
             /*処理*/
             // サブシーンに切り替える
             //フェードを掛けてからシーン遷移する
-            fade.FadeIn(fadeTime, () =>
-            {
-                SceneManager.LoadScene(sceneName);
-            });
-
+            //fade.FadeIn(fadeTime, () =>
+            //{
+            //    SceneManager.LoadScene("Stage1_proto");
+            //});
+            SceneManager.LoadScene("Stage1_proto");
             firstPush = true;
         }
     }

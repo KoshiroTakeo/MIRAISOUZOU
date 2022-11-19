@@ -18,6 +18,7 @@ public partial class EnemyCommon : MonoBehaviour
     private static readonly StateRunway s_runway = new StateRunway();
     private static readonly StateChangemode s_changemode = new StateChangemode();
     private static readonly StateLeave s_leave = new StateLeave();
+    private static readonly StateAttack s_attack = new StateAttack();
 
     /// Public Fnc
     public void AddDmg(int damage)

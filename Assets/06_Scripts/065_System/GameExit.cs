@@ -2,9 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.InputSystem;
 
-public class GameExit : MonoBehaviour, IMusic
+public class GameExit : MonoBehaviour,IMusic
 {
     AudioSource audioSource;
 
@@ -38,11 +37,14 @@ public class GameExit : MonoBehaviour, IMusic
     public void EndGame()
     {
         // SEを流す
+        /*
         IMusic iMusic = buttonObj.GetComponent<IMusic>();
         if (iMusic != null)
         {
             iMusic.PlaySound(0);
         }
+        */
+        SoundManager.Instance.PlaySE(SESoundData.SE.StartButton);
 
         //#if UNITY_EDITOR
         // エディターから終了させたいとき
@@ -51,5 +53,5 @@ public class GameExit : MonoBehaviour, IMusic
         Application.Quit();//ゲームプレイ終了
                            //#endif
     }
-}
 
+}

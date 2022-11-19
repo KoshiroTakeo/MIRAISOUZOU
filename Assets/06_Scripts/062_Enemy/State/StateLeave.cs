@@ -18,29 +18,33 @@ public partial class EnemyCommon
             Debug.Log("‚É[‚°‚é‚ñƒ_ƒˆ[ƒ“");
             pos = owner.transform.position;
             currentvelocity = owner.rig.velocity.magnitude;
-            target = pos.x - owner.leave;
+            target = pos.z - owner.leave;
             check = pos;
+            //DelayStateChange(owner);
         }
 
         public override void OnUpdate(EnemyCommon owner)
         {
-            //if (Mathf.Abs(target - pos.x) > 0.1)
-            //    owner.ChangeState(s_runway);
-
-            pos.x = Mathf.SmoothDamp(pos.x, target, ref currentvelocity, 0.8f, 5);
-            owner.transform.position = pos;
-
-            
+            if (owner.transform.position.z > 500)
+                owner.ChangeState(s_runway);
         }
 
         public override void OnFixedUpdate(EnemyCommon owner)
         {
-
+            pos.z = Mathf.SmoothDamp(pos.z, -target, ref currentvelocity, 1f);
+            owner.transform.position = pos;
         }
 
         public override void OnExit(EnemyCommon owner, StateBase next)
         {
+            owner.rig.velocity = Vector3.zero;
+        }
 
+        private IEnumerator DelayStateChange(EnemyCommon owner)
+        {
+            yield return new WaitForSeconds(1.5f);
+
+            owner.ChangeState(s_runway);
         }
     }
 
