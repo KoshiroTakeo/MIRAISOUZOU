@@ -1405,6 +1405,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FogBody
       objectReference: {fileID: 0}
+    - target: {fileID: 2709317132154223223, guid: 10600b343998a7d4e9514dba769da37c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2709317132154223227, guid: 10600b343998a7d4e9514dba769da37c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1474,6 +1479,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestFogDistance
       objectReference: {fileID: 0}
+    - target: {fileID: 8469900460577094904, guid: e23fa96f86396ac46b8acadc22e0d3c8,
+        type: 3}
+      propertyPath: fogPoint
+      value: 
+      objectReference: {fileID: 5772864216391286180, guid: 954a81e5430b878479dd752af50c0ef8,
+        type: 3}
     - target: {fileID: 8469900460577094905, guid: e23fa96f86396ac46b8acadc22e0d3c8,
         type: 3}
       propertyPath: m_RootOrder
