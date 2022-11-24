@@ -5,7 +5,7 @@ using UnityEngine;
 public class HomingBulletHit : MonoBehaviour
 {
     //弾のスピード
-    public float BulletSpeed = 0.01f;
+    public float BulletSpeed = 1.0f;
     //ゲームスピード
     public float GameSpeed = 1.0f;
     //プレイヤースピード
@@ -18,20 +18,25 @@ public class HomingBulletHit : MonoBehaviour
     public GameObject Enemy;
     //弾を消す座標
     public float BulletDeletePos = -50.0f;
-    
+
+    private GameManager GameMng;
+
     // Start is called before the first frame update
     void Start()
     {
         //オブジェクトを見つける
-        Player = GameObject.Find("Player");
-        Enemy = GameObject.Find("HomingEnemy");
+        Player = GameObject.Find("Player_XRRig");
+        Enemy = GameObject.Find("Stage1_Boss");
+
+        //ゲームマネージャーを参照
+        GameMng = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
-        transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, BulletSpeed * GameSpeed * PlayerSpeed);
+         
+        transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, BulletSpeed * GameMng.WorldTime * GameMng.AccelSpeed);
 
         //弾のZ軸の位置がBulletDeletePos以下の時
         if (gameObject.transform.position.z < BulletDeletePos)
@@ -53,7 +58,7 @@ public class HomingBulletHit : MonoBehaviour
             //エフェクトを発生させる
             //GenerateHitEffect();
         }
-        
+
         //衝突したオブジェクトがPlayerだったとき
         if (collision.gameObject.CompareTag("Weapon"))
         {
@@ -63,7 +68,7 @@ public class HomingBulletHit : MonoBehaviour
             //エフェクトを発生させる
             //GenerateHitEffect();
         }
-        
+
     }
     void GenerateHitEffect()
     {

@@ -78,11 +78,11 @@ public class GameStart : MonoBehaviour,IMusic
             /*処理*/
             // サブシーンに切り替える
             //フェードを掛けてからシーン遷移する
-            //fade.FadeIn(fadeTime, () =>
-            //{
-            //    SceneManager.LoadScene("Stage1_proto");
-            //});
-            SceneManager.LoadScene("Stage1_proto");
+            fade.FadeIn(fadeTime, () =>
+            {
+                SceneManager.LoadScene(sceneName);
+            });
+
             firstPush = true;
         }
     }

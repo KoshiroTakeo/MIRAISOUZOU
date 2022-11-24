@@ -5,32 +5,46 @@ using UnityEngine;
 public class BulletHit : MonoBehaviour
 {
     //弾のスピード
-    private float BulletSpeed = 0.7f; // 10/20竹尾変更中（元：0.1f）
+    private float BulletSpeed = 2.1f; // 10/20竹尾変更中（元：0.1f）
     //ゲームスピード
     public float GameSpeed = 1.0f;
     //プレイヤースピード
     public float PlayerSpeed = 1.0f;
+    //弾のスピードを変更する位置
+    public float BulletLatePos = 100.0f;
+    //弾のスピード変更用
+    public float BulletLateSpeed;
+
 
     //弾がプレイヤーと当たった時のエフェクト
     public GameObject HitEffect;
     //弾を消す座標
     public float BulletDeletePos = -50.0f;
+    //ゲームマネージャー参照用
+    private GameManager GameMng;
+
+
     // Start is called before the first frame update
     void Start()
     {
-
+        //ゲームマネージャーを参照
+        GameMng = GameObject.Find("GameManager").GetComponent<GameManager>();
+        BulletLateSpeed = 1.0f;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Vector3という型に値を入れ、計算
         Vector3 BulletPos = transform.position;
         //弾の速度を加算（弾速度×ゲームスピード×プレイヤースピード）
-        BulletPos.z += -BulletSpeed * GameSpeed * PlayerSpeed;
+        BulletPos.z += -BulletSpeed * GameMng.WorldTime * GameMng.AccelSpeed * BulletLateSpeed * GameSpeed * PlayerSpeed;
         //ポジションに代入
         transform.position = BulletPos;
-
+        if (gameObject.transform.position.z < BulletLatePos)
+        {
+            BulletLateSpeed = 0.1f;
+        }
         //弾のZ軸の位置がBulletDeletePos以下の時
         if (gameObject.transform.position.z < BulletDeletePos)
         {
@@ -40,9 +54,8 @@ public class BulletHit : MonoBehaviour
     }
 
     // 当たり判定
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.name);
         //衝突したオブジェクトがPlayerだったとき
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -58,8 +71,6 @@ public class BulletHit : MonoBehaviour
         {
             //弾を削除
             Destroy(gameObject);
-
-            Debug.Log("斬れた");
 
             //エフェクトを発生させる
             //GenerateHitEffect();

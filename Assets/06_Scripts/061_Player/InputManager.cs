@@ -68,7 +68,7 @@ public class InputManager : MonoBehaviour
         InputTrigger_L(triggervalue_L, triggerpress_L);
         InputTrigger_R(triggervalue_R, triggerpress_R);
         InputGrip_L(gripvalue_L, grippress_L);
-        InputGrip_L(gripvalue_R, grippress_R);
+        InputGrip_R(gripvalue_R, grippress_R);
 
         InputButton_A(button_A);
         InputButton_B(button_B);
@@ -92,13 +92,13 @@ public class InputManager : MonoBehaviour
     }
     public void InputGrip_L(float _value, bool _press)
     {
-        if (_value <= fHoldValue) InputPlayer.HoldGripAction_L(_value); ;
+        if (_value >= fHoldValue) InputPlayer.HoldGripAction_L(_value); ;
         if (_press == true) InputPlayer.PressGripAction_L();
 
     }
     public void InputGrip_R(float _value, bool _press)
     {
-        if (_value <= fHoldValue) InputPlayer.HoldGripAction_R(_value); ;
+        if (_value >= fHoldValue) InputPlayer.HoldGripAction_R(_value); ;
         if (_press == true) InputPlayer.PressGripAction_R();
 
     }

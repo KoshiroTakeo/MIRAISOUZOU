@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 
 public class SwordWeapon : MonoBehaviour
@@ -18,8 +19,14 @@ public class SwordWeapon : MonoBehaviour
 	private Vector3[] angularVelocitySamples;
 
 	[SerializeField] GameObject AttackPoint = null; // あたり判定オブジェクト
-	//[SerializeField] OVRInput.Controller Controller;
 	[SerializeField] float fOnAttackVelocity = 3;
+
+	// 振動の強さ
+	[Header("振った時の振動強さ")]
+	[SerializeField] float Amplitude = 0.3f;
+	[Header("振った時の振動時間")]
+	[SerializeField] float Duration = 0.2f;
+	[SerializeField] public XRBaseController XRController;
 
 
 
@@ -29,11 +36,13 @@ public class SwordWeapon : MonoBehaviour
 		velocitySamples = new Vector3[velocityAverageFrames];
 		angularVelocitySamples = new Vector3[angularVelocityAverageFrames];
 
-
+		XRController.SendHapticImpulse(Amplitude, Duration);
 		if (estimateOnAwake)
 		{
 			BeginEstimatingVelocity();
 		}
+
+
 	}
 
 	private void Update()
@@ -42,7 +51,6 @@ public class SwordWeapon : MonoBehaviour
 		{
 			estimateOnAwake = this.gameObject.activeSelf;
 			SlashAttack();
-			//Weapon.enabled = true;
 		}
 		else
         {
@@ -56,8 +64,8 @@ public class SwordWeapon : MonoBehaviour
 	{
 		if (GetVelocityEstimate().y > fOnAttackVelocity || GetVelocityEstimate().y < -fOnAttackVelocity)
 		{
-			Debug.Log("攻撃");
 			AttackPoint.SetActive(true);
+			
 
 		}
 		else
@@ -66,19 +74,8 @@ public class SwordWeapon : MonoBehaviour
 		}
 	}
 
-	private void OnTriggerEnter(Collider collider)
-	{
-
-		//if (collider.gameObject.tag == "Enemy")
-		//{ 
-		//	Damage(collider.gameObject.GetComponent<EnemyManager>());
-		//	StartCoroutine(VibrateForSeconds(0.2f, 0.8f, 0.8f, Controller));
-		//}
-
-	}
-
 	
-
+	// 加速系システム =======================================================================================
 	//-------------------------------------------------
 	public void BeginEstimatingVelocity()
 	{
@@ -96,7 +93,6 @@ public class SwordWeapon : MonoBehaviour
 			routine = null;
 		}
 	}
-
 
 	// ジャイロセンサー
 	public Vector3 GetVelocityEstimate()
@@ -117,7 +113,6 @@ public class SwordWeapon : MonoBehaviour
 		return velocity;
 	}
 
-
 	//-------------------------------------------------
 	public Vector3 GetAngularVelocityEstimate()
 	{
@@ -135,7 +130,6 @@ public class SwordWeapon : MonoBehaviour
 
 		return angularVelocity;
 	}
-
 
 	//-------------------------------------------------
 	// 加速度チェック
@@ -199,19 +193,6 @@ public class SwordWeapon : MonoBehaviour
 			previousRotation = transform.rotation;
 		}
 	}
-
-	//-------------------------------------------------
-	// 振動処理
-	IEnumerator VibrateForSeconds(float duration, float frequency, float amplitude, OVRInput.Controller controller)
-	{
-		// 振動開始
-		OVRInput.SetControllerVibration(frequency, amplitude, controller); //(振動数、振幅、右か左か)
-
-		// 振動間隔分待つ
-		yield return new WaitForSeconds(duration);
-
-		// 振動終了
-		OVRInput.SetControllerVibration(0, 0, controller);
-	}
+	//================================================================================================
 }
 

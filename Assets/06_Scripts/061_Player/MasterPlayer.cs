@@ -24,9 +24,14 @@ namespace VR.Players
 
         // 移動クラス
         HoverMover HoverMove;  // 浮遊移動
+        float fsetSpeed;
+        bool bLBreak = false;
+        bool bRBreak = false;
 
-        // ゲームマネージャー
+        // シーン上のとっておくべきオブジェクト
         GameManager Manager;
+        IDamage DamageEffect;
+        IRecovery SkillEffect;
 
 
        
@@ -46,9 +51,14 @@ namespace VR.Players
 
 
             Parameter = new PlayerParameter(Data);
+            fsetSpeed = Parameter.fSpeed;
+            bLBreak = false;
+            bRBreak = false;
             HoverMove = new HoverMover();
 
             Manager = GameObject.FindWithTag("Manager").GetComponent<GameManager>();
+            DamageEffect = GameObject.FindWithTag("UIs").GetComponent<IDamage>();
+            SkillEffect = GameObject.FindWithTag("UIs").GetComponent<IRecovery>();
         }
 
         private void Update()
@@ -61,13 +71,13 @@ namespace VR.Players
             }
 
             // 浮遊移動
-            HoverMove.HeadInclinationMove(this.gameObject ,PlayerCharacter, AnchorObject.transform.position, InitirizeAnchorPos,Parameter.fSpeed);
+            HoverMove.HeadInclinationMove(this.gameObject ,PlayerCharacter, AnchorObject.transform.position, InitirizeAnchorPos, fsetSpeed);
         }
 
         // 左コントローラー処理
         public void PressTriggerAction_L()
         {
-            
+            SkillEffect.RecoveryEffect();
         }
         public void HoldTriggerAction_L(float value)
         {
@@ -76,11 +86,27 @@ namespace VR.Players
 
         public void PressGripAction_L()
         {
-
+            
         }
 
         public void HoldGripAction_L(float value)
         {
+            if (value >= 0.7f)
+            {
+                fsetSpeed = fsetSpeed * 0.99f;
+                bLBreak = true;
+                
+            }
+            else if(bLBreak == true && bRBreak == true)
+            {
+                
+                fsetSpeed = fsetSpeed * 0.3f;
+            }
+            else
+            {
+                fsetSpeed = Parameter.fSpeed;
+                bLBreak = false;
+            }
 
         }
 
@@ -102,12 +128,21 @@ namespace VR.Players
         // 右コントローラー処理
         public void PressTriggerAction_R()
         {
-            
+            SkillEffect.RecoveryEffect();
         }
 
         public void HoldTriggerAction_R(float value)
         {
-
+            if (value >= 0.7f)
+            {
+                fsetSpeed = fsetSpeed * 0.99f;
+                bRBreak = true;
+            }
+            else
+            {
+                fsetSpeed = Parameter.fSpeed;
+                bRBreak = false;
+            }
         }
 
         public void PressGripAction_R()
@@ -135,12 +170,15 @@ namespace VR.Players
 
         }
 
+        
+
         // 接触判定
         private void OnTriggerEnter(Collider collider)
         {
             if (collider.gameObject.tag == "EnemyAttack")
             {
                 StartCoroutine(Parameter.OnArmorTime());
+                DamageEffect.DamageEffect();
                 Manager.CheckDamage();
                 Parameter.CheckHP();
             }

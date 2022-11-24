@@ -109,12 +109,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ba02f05cbe7d948bf37221da0e7b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletSpeed: 0.01
+  BulletSpeed: 0.6
   GameSpeed: 1
   PlayerSpeed: 1
   HitEffect: {fileID: 3461540734357188346, guid: 2f743028a3e97cd4c9512a6c811e1c08,
     type: 3}
-  Player: {fileID: 1735322376125559809, guid: 75a0a8448d1091b409ea7e73d36c62e2, type: 3}
+  Player: {fileID: 2571242799231300448, guid: 7431c01b503c0ba44ba73a2c78865a23, type: 3}
+  TEnemy: {fileID: 7027052244427521494, guid: 1d3dc3e322a48d148938815b1afa006a, type: 3}
   Bullet: {fileID: 1889412609930610996}
   BulletDeletePos: -50
 --- !u!54 &7406829080141134750
